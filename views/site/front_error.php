@@ -18,7 +18,6 @@
 	$this->layout = 'login';
 	$this->pageTitle = Yii::t('phrase', 'Error {code}', array('{code}'=>$code));
 	$this->pageDescription = CHtml::encode($message);
-	$this->pageMeta = '';
 ?>
 
 <form class="col-md-12" id="sign_in" method="POST">
