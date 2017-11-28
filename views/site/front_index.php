@@ -15,7 +15,6 @@
 		'Main',
 	);
 	
-	$this->layout = 'login';
 	$this->pageTitle = Yii::t('phrase', 'Main');
 	$this->pageDescription = '';
 	

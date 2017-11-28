@@ -29,7 +29,7 @@
 	}
 ?>
 
-<!-- Page Loader -->
+<?php //begin.Page Loader ?>
 <div class="page-loader-wrapper">
 	<div class="loader">
 		<div class="line"></div>
@@ -40,17 +40,17 @@
 	</div>
 </div>
 
-<!-- Overlay For Sidebars -->
+<?php //begin.Overlay For Sidebars ?>
 <div class="overlay"></div>
 
-<!-- Search  -->
+<?php //begin.Search ?>
 <div class="search-bar">
 	<div class="search-icon"> <i class="material-icons">search</i> </div>
 	<input type="text" placeholder="Explore adminX...">
 	<div class="close-search"> <i class="material-icons">close</i> </div>
 </div>
 
-<!-- Top Bar -->
+<?php //begin.Top Bar ?>
 <nav class="navbar clearHeader">
 	<div class="navbar-header">
 		<a href="javascript:void(0);" class="bars"></a> <a class="navbar-brand" href="index.html"><img class="logo" src="<?php echo Yii::app()->theme->baseUrl;?>/images/logo.svg" alt="profile img">Hospital</a>	
@@ -222,17 +222,17 @@
 		</ul>
 	</div>
 </nav>
-<!-- #Top Bar --> 
+<?php //end.Top Bar ?>
 
-<!-- main sidebar -->
+<?php //begin.Main sidebar ?>
 <section>
-	<!-- Left Sidebar -->
+	<?php //begin.Left Sidebar ?>
 	<aside id="leftsidebar" class="sidebar"> 
-		<!-- Menu -->
+		<?php //begin.Menu ?>
 		<div class="menu">
 			<ul class="list">
 				<li> 
-					<!-- User Info -->
+					<?php //begin.User Info ?>
 					<div class="user-info">
 						<div class="admin-image"> <img src="<?php echo Yii::app()->theme->baseUrl;?>/images/avatar.jpg" alt="profile img"> </div>
 						<div class="admin-action-info">
@@ -245,7 +245,7 @@
 							</ul>
 						</div>
 					</div>
-					<!-- #User Info --> 
+					<?php //end.User Info ?>
 				</li>
 				<li class="header">MAIN NAVIGATION</li>
 				<li class="active open"><a href="index.html"><i class="zmdi zmdi-home"></i><span>Dashboard</span></a></li>
@@ -327,10 +327,10 @@
 				<li> <a href="javascript:void(0);"><i class="zmdi zmdi-chart-donut col-blue"></i><span>Information</span> </a> </li>
 			</ul>
 		</div>
-		<!-- #Menu --> 
+		<?php //end.Menu ?>
 	</aside>
-	<!-- #END# Left Sidebar --> 
-	<!-- Right Sidebar -->
+	<?php //end.Left Sidebar ?>
+	<?php //begin.Right Sidebar ?>
 	<aside id="rightsidebar" class="right-sidebar">
 		<ul class="nav nav-tabs tab-nav-right">
 			<li class="nav-item"><a href="#settings" class="nav-link active" data-toggle="tab">Setting</a></li>
@@ -577,10 +577,11 @@
 			</div>
 		</div>
 	</aside>
-	<!-- #END# Right Sidebar --> 
+	<?php //end.Right Sidebar ?>
 <section>
+<?php //end.Main sidebar ?>
 
-<!-- main content -->
+<?php //begin.Main Content ?>
 <section class="content">
 	<div class="container-fluid">
 		<div class="block-header">
@@ -594,5 +595,6 @@
 		<?php echo $content;?>
 	</div>
 </section>
+<?php //end.Main Content ?>
 
 <?php $this->endContent(); ?>
