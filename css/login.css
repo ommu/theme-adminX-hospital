@@ -291,3 +291,9 @@
 		opacity: 0;
 	}
 }
+
+.form-group .errorMessage {
+	margin-top: 5px;
+	font-size: 13px;
+	color: #ff0000;
+}

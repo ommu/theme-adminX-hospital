@@ -1,6 +1,6 @@
 <?php
 /**
- * @var $this SiteController
+ * @var $this SignupController
  * @var $error array
  * version: 1.3.0
  *
