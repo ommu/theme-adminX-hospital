@@ -16,8 +16,6 @@
 	);
 	
 	$this->layout = 'login';
-	$this->pageTitle = Yii::t('phrase', 'Login');
-	$this->pageDescription = '';
 ?>
 
 <?php $form=$this->beginWidget('application.libraries.core.components.system.OActiveForm', array(
@@ -32,7 +30,7 @@
 )); ?>
 	<?php if($condition == false || ($condition == true && $token == null)) {?>
 	<div class="form-group form-float">
-		<div class="form-line">
+		<div class="form-line <?php echo $model->email != '' ? 'focused' : '';?>">
 			<?php echo $form->textField($model,'email', array('maxlength'=>32, 'class'=>'form-control')); ?>
 			<?php echo $form->labelEx($model,'email', array('class'=>'form-label')); ?>
 		</div>
@@ -45,7 +43,7 @@
 			echo $form->hiddenField($model,'email');
 		}?>
 	<div class="form-group form-float">
-		<div class="form-line">
+		<div class="form-line <?php echo $model->password != '' ? 'password' : '';?>">
 			<?php echo $form->passwordField($model,'password', array('maxlength'=>32, 'class'=>'form-control')); ?>
 			<?php echo $form->labelEx($model,'password', array('class'=>'form-label')); ?>
 		</div>

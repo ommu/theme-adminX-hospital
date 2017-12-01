@@ -16,22 +16,38 @@
 	);
 	
 	$this->layout = 'login';
-	$this->pageTitle = Yii::t('phrase', 'Forgot Password?');
-	$this->pageDescription = Yii::t('phrase', 'Enter your e-mail address or username below to reset your password.');
 ?>
 
-<form class="col-md-12" id="sign_in" method="POST">
-	<div class="form-group form-float">
-		<div class="form-line">
-			<input type="email" class="form-control">
-			<label class="form-label"><?php echo Yii::t('phrase', 'Email or Username');?></label>
+<?php if($token == null) {?>
+	<?php $form=$this->beginWidget('application.libraries.core.components.system.OActiveForm', array(
+		'id'=>'user-forgot-form',
+		'enableClientValidation'=>true,
+		'clientOptions'=>array(
+			'validateOnSubmit'=>true,
+		),
+		'htmlOptions'=>array(
+			'class'=>'col-md-12',
+		),
+	)); ?>
+		<div class="form-group form-float">
+			<div class="form-line <?php echo $model->email_i != '' ? 'focused' : '';?>">
+				<?php echo $form->textField($model,'email_i', array('maxlength'=>32, 'class'=>'form-control')); ?>
+				<?php echo $form->labelEx($model,'email_i', array('class'=>'form-label')); ?>
+			</div>
+			<?php echo $form->error($model,'email_i'); ?>
 		</div>
-	</div>            
-	<div class="row">                    
-		<div class="col-sm-12">
-			<a href="#" class="btn btn-raised waves-effect g-bg-cyan"><?php echo Yii::t('phrase', 'RESET MY PASSWORD');?></a>
+		<?php echo CHtml::submitButton(Yii::t('phrase', 'RESET MY PASSWORD'), array('onclick'=>'setEnableSave()', 'class'=>'btn btn-raised g-bg-cyan waves-effect')); ?>
+		<div class="m-t-10">
+			<?php echo CHtml::link(Yii::t('phrase', 'Forgot Username?'), Yii::app()->controller->createUrl('username'));?><br/>
+			<?php echo CHtml::link(Yii::t('phrase', 'Sign In!'), Yii::app()->createUrl('site/login'));?>
 		</div>
-		<div class="m-t-10 col-sm-12"> <a href="<?php echo Yii::app()->createUrl('forgot/username');?>"><?php echo Yii::t('phrase', 'Forgot Username?');?></a> </div>
-		<div class="col-sm-12"> <a href="<?php echo Yii::app()->createUrl('site/login');?>"><?php echo Yii::t('phrase', 'Sign In!');?></a> </div>
+	<?php $this->endWidget(); ?>
+
+<?php } else {?>
+	<div class="col-md-12">
+		<?php echo CHtml::link(Yii::t('phrase', 'SIGN IN'), Yii::app()->createUrl('site/login'), array('class'=>'btn btn-raised g-bg-cyan waves-effect'));?>
+		<div class="m-t-10">
+			<?php echo CHtml::link(Yii::t('phrase', 'Forgot Username?'), Yii::app()->controller->createUrl('username'));?>
+		</div>
 	</div>
-</form>
+<?php }?>

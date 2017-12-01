@@ -16,39 +16,68 @@
 	);
 	
 	$this->layout = 'login';
-	$this->pageTitle = Yii::t('phrase', 'Sign Up');
-	$this->pageDescription = Yii::t('phrase', 'Register a new membership');
 ?>
 
-<form class="col-md-12">
-	<div class="form-group form-float">
-		<div class="form-line">
-			<input type="text" class="form-control">
-			<label class="form-label"><?php echo Yii::t('phrase', 'Enter Name');?></label>
+<?php if($token == null) {?>
+	<?php $form=$this->beginWidget('application.libraries.core.components.system.OActiveForm', array(
+		'id'=>'signup-form',
+		'enableClientValidation'=>true,
+		'clientOptions'=>array(
+			'validateOnSubmit'=>true,
+		),
+		'htmlOptions'=>array(
+			'class'=>'col-md-12',
+		),
+	)); ?>
+		<div class="form-group form-float">
+			<div class="form-line <?php echo $model->displayname != '' ? 'focused' : '';?>">
+				<?php echo $form->textField($model,'displayname', array('maxlength'=>32, 'class'=>'form-control')); ?>
+				<?php echo $form->labelEx($model,'displayname', array('class'=>'form-label')); ?>
+			</div>
+			<?php echo $form->error($model,'displayname'); ?>
+		</div>
+		<div class="form-group form-float">
+			<?php if($email != null) {
+				$model->email = $email;
+				echo $form->hiddenField($model,'email');
+			}?>
+			<div class="form-line <?php echo $model->email != '' ? 'focused' : '';?>">
+				<?php echo $form->textField($model,'email', array('maxlength'=>32, 'class'=>'form-control')); ?>
+				<?php echo $form->labelEx($model,'email', array('class'=>'form-label')); ?>
+			</div>
+			<?php echo $form->error($model,'email'); ?>
+		</div>
+		<?php if($setting->signup_random != 1) {?>
+			<div class="form-group form-float">
+				<div class="form-line <?php echo $model->newPassword != '' ? 'focused' : '';?>">
+					<?php echo $form->passwordField($model,'newPassword', array('maxlength'=>32, 'class'=>'form-control')); ?>
+					<?php echo $form->labelEx($model,'newPassword', array('class'=>'form-label')); ?>
+				</div>
+				<?php echo $form->error($model,'newPassword'); ?>
+			</div>
+			<div class="form-group form-float">
+				<div class="form-line <?php echo $model->confirmPassword != '' ? 'focused' : '';?>">
+					<?php echo $form->passwordField($model,'confirmPassword', array('maxlength'=>32, 'class'=>'form-control')); ?>
+					<?php echo $form->labelEx($model,'confirmPassword', array('class'=>'form-label')); ?>
+				</div>
+				<?php echo $form->error($model,'confirmPassword'); ?>
+			</div>
+		<?php }?>
+		<div>
+			<input type="checkbox" name="terms" id="terms" class="filled-in chk-col-cyan">
+			<label for="terms"><?php echo Yii::t('phrase', 'I read and agree to the {terms}.', array('{terms}'=>CHtml::link(Yii::t('phrase', 'terms of usage'), '', array('target' => '_blank'))));?></label>
+		</div>
+		<?php echo CHtml::submitButton(Yii::t('phrase', 'SIGN UP'), array('onclick'=>'setEnableSave()', 'class'=>'btn btn-raised g-bg-cyan waves-effect')); ?>
+		<div class="m-t-10">
+			<?php echo CHtml::link(Yii::t('phrase', 'You already have a membership?'), Yii::app()->createUrl('site/login'));?>
+		</div>
+	<?php $this->endWidget(); ?>
+
+<?php } else {?>
+	<div class="col-md-12">
+		<?php echo CHtml::link(Yii::t('phrase', 'SIGN IN'), Yii::app()->createUrl('site/login'), array('class'=>'btn btn-raised g-bg-cyan waves-effect'));?>
+		<div class="m-t-10">
+			<?php echo CHtml::link(Yii::t('phrase', 'Forgot Password?'), Yii::app()->createUrl('forgot/password'));?>
 		</div>
 	</div>
-	<div class="form-group form-float">
-		<div class="form-line">
-			<input type="email" class="form-control">
-			<label class="form-label"><?php echo Yii::t('phrase', 'Email Address');?></label>
-		</div>
-	</div>
-	<div class="form-group form-float">
-		<div class="form-line">
-			<input type="password" class="form-control">
-			<label class="form-label"><?php echo Yii::t('phrase', 'Password');?></label>
-		</div>
-	</div>
-	<div class="form-group form-float">
-		<div class="form-line">
-			<input type="password" class="form-control">
-			<label class="form-label"><?php echo Yii::t('phrase', 'Confirm Password');?></label>
-		</div>
-	</div>
-	<div class="form-group">
-		<input type="checkbox" name="terms" id="terms" class="filled-in chk-col-cyan">
-		<label for="terms"><?php echo Yii::t('phrase', 'I read and agree to the {terms}.', array('{terms}'=>CHtml::link(Yii::t('phrase', 'terms of usage'), '', array('target' => '_blank'))));?></label>
-	</div>
-	<div class="text-left"> <a href="#" class="btn btn-raised waves-effect g-bg-cyan"><?php echo Yii::t('phrase', 'SIGN UP');?></a> </div>
-	<div class="m-t-10 m-b--5"> <a href="<?php echo Yii::app()->createUrl('site/login');?>"><?php echo Yii::t('phrase', 'You already have a membership?');?></a> </div>
-</form>
+<?php }?>
