@@ -163,9 +163,11 @@
 	text-transform: uppercase;
 }
 .l-login .msg {
+	margin-top: 10px;
 	font-size: 15px;
 	font-weight: 400;
 	text-transform: none;
+	line-height: 1.5em;
 }
 .l-detail h1 {
 	margin: 0;
@@ -299,4 +301,5 @@
 }
 form .form-group {
 	margin-top: 20px;
+	padding-bottom: 0;
 }

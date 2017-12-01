@@ -55,8 +55,8 @@
 	</div>
 	<?php }?>
 	<?php echo CHtml::submitButton(Yii::t('phrase', 'SIGN IN'), array('onclick'=>'setEnableSave()', 'class'=>'btn btn-raised g-bg-cyan waves-effect')); ?>
-	<?php echo CHtml::link(Yii::t('phrase', 'SIGN UP'), Yii::app()->createUrl('signup/index'), array('class'=>'btn btn-raised waves-effect'));?>
+	<?php echo CHtml::link(Yii::t('phrase', 'SIGN UP'), Yii::app()->createUrl('account/signup'), array('class'=>'btn btn-raised waves-effect'));?>
 	<div class="m-t-10">
-		<?php echo CHtml::link(Yii::t('phrase', 'Forgot Password?'), Yii::app()->createUrl('forgot/password'));?>
+		<?php echo CHtml::link(Yii::t('phrase', 'Forgot Password?'), Yii::app()->createUrl('account/forgot'));?>
 	</div>
 <?php $this->endWidget(); ?>

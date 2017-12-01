@@ -1,6 +1,6 @@
 <?php
 /**
- * @var $this SignupController
+ * @var $this AccountController
  * @var $error array
  * version: 1.3.0
  *
@@ -77,7 +77,7 @@
 	<div class="col-md-12">
 		<?php echo CHtml::link(Yii::t('phrase', 'SIGN IN'), Yii::app()->createUrl('site/login'), array('class'=>'btn btn-raised g-bg-cyan waves-effect'));?>
 		<div class="m-t-10">
-			<?php echo CHtml::link(Yii::t('phrase', 'Forgot Password?'), Yii::app()->createUrl('forgot/password'));?>
+			<?php echo CHtml::link(Yii::t('phrase', 'Forgot Password?'), Yii::app()->controller->createUrl('forgot'));?>
 		</div>
 	</div>
 <?php }?>

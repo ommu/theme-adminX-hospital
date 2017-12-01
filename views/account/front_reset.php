@@ -1,6 +1,6 @@
 <?php
 /**
- * @var $this PasswordController
+ * @var $this AccountController
  * @var $error array
  * version: 1.3.0
  *
@@ -25,7 +25,7 @@
 
 <?php } else if(in_array($condition, array('novalid','expired'))) {?>
 	<div class="col-md-12">
-		<?php echo CHtml::link(Yii::t('phrase', 'Forgot Password'), Yii::app()->createUrl('forgot/password'), array('class'=>'btn btn-raised g-bg-cyan waves-effect'));?>
+		<?php echo CHtml::link(Yii::t('phrase', 'Forgot Password'), Yii::app()->controller->createUrl('forgot'), array('class'=>'btn btn-raised g-bg-cyan waves-effect'));?>
 		<div class="m-t-10">
 			<?php echo CHtml::link(Yii::t('phrase', 'Sign In!'), Yii::app()->createUrl('site/login'));?>
 		</div>

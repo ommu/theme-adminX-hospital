@@ -1,6 +1,6 @@
 <?php
 /**
- * @var $this ForgotController
+ * @var $this AccountController
  * @var $error array
  * version: 1.3.0
  *
