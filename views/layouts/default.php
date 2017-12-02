@@ -81,9 +81,9 @@
 		$cs->registerCssFile('https://fonts.googleapis.com/icon?family=Material+Icons');
 		$cs->registerCssFile(Yii::app()->theme->baseUrl.'/css/main.css');
 		$cs->registerCssFile(Yii::app()->theme->baseUrl.'/css/all-themes.css'); // choose a theme from css/themes instead of get all themes
-		$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/js/libscripts.bundle.js', CClientScript::POS_END); // Bootstrap JS and jQuery v3.2.1
-		$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/js/vendorscripts.bundle.js', CClientScript::POS_END); // slimscroll, waves Scripts Plugin Js
-		$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/js/mainscripts.bundle.js', CClientScript::POS_END); // Custom Js
+		$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/js/libscripts.bundle.js', CClientScript::POS_BEGIN); // Bootstrap JS and jQuery v3.2.1
+		$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/js/vendorscripts.bundle.js', CClientScript::POS_BEGIN); // slimscroll, waves Scripts Plugin Js
+		$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/js/mainscripts.bundle.js', CClientScript::POS_BEGIN); // Custom Js
 	?>
 <!DOCTYPE html>
 <html>
