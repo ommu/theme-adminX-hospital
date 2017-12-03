@@ -13,7 +13,7 @@
 
 	$this->breadcrumbs=array(
 		'Patients'=>array('index'),
-		'Add',
+		'Add Patient',
 	);
 	$cs = Yii::app()->getClientScript();
 	$cs->registerCssFile(Yii::app()->theme->baseUrl.'/plugins/dropzone/dropzone.css');
