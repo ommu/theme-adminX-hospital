@@ -1,0 +1,10 @@
+group_page		: public
+name			: adminX Hospital
+folder			: adminx-hospital
+layout			: main
+thumbnail		: adminx_hospital.png
+author			: Putra Sudaryanto
+
+controller	:
+
+settings	:
