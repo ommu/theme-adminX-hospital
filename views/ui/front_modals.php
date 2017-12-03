@@ -16,7 +16,7 @@
 		'Modals Popups',
 	);
 	$cs = Yii::app()->getClientScript();
-	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/modals.js', CClientScript::POS_END);
+	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/js/custom/modals.js', CClientScript::POS_END);
 ?>
 <?php //begin.Modal Size Example ?>
 <div class="row clearfix">

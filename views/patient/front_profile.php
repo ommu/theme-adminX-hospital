@@ -17,7 +17,7 @@
 	);
 	$cs = Yii::app()->getClientScript();
 	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/js/flotchartsscripts.bundle.js', CClientScript::POS_END);
-	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/flot.js', CClientScript::POS_END);
+	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/js/custom/flot.js', CClientScript::POS_END);
 ?>
 
 <div class="row clearfix">

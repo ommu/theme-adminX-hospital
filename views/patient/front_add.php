@@ -23,7 +23,7 @@
 	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/momentjs/moment.js', CClientScript::POS_END); // Moment Plugin Js
 	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/dropzone/dropzone.js', CClientScript::POS_END); // Dropzone Plugin Js
 	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js', CClientScript::POS_END); // Bootstrap Material Datetime Picker Plugin Js
-	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/basic-form-elements.js', CClientScript::POS_END);
+	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/js/custom/basic-form-elements.js', CClientScript::POS_END);
 ?>
 
 <div class="row clearfix">

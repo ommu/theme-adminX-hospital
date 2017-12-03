@@ -17,7 +17,7 @@
 	);
 	$cs = Yii::app()->getClientScript();
 	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/bootstrap-notify/bootstrap-notify.js', CClientScript::POS_END);
-	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/notifications.js', CClientScript::POS_END);
+	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/js/custom/notifications.js', CClientScript::POS_END);
 ?>
 
 <div class="row clearfix">

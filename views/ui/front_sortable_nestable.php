@@ -18,7 +18,7 @@
 	$cs = Yii::app()->getClientScript();
 	$cs->registerCssFile(Yii::app()->theme->baseUrl.'/plugins/nestable/jquery-nestable.css');
 	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/nestable/jquery.nestable.js', CClientScript::POS_END);
-	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/sortable-nestable.js', CClientScript::POS_END);
+	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/js/custom/sortable-nestable.js', CClientScript::POS_END);
 ?>
 
 <div class="row clearfix"> 

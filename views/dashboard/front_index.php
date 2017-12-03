@@ -24,10 +24,10 @@
 	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/js/countto.bundle.js', CClientScript::POS_END); 
 	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/jvectormap/jquery-jvectormap-2.0.3.min.js', CClientScript::POS_END); 
 	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/jvectormap/jquery-jvectormap-world-mill-en.js', CClientScript::POS_END); 
-	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/index.js', CClientScript::POS_END);
-	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/sparkline.js', CClientScript::POS_END);
-	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/jvectormap.js', CClientScript::POS_END);
-	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/jquery-knob.js', CClientScript::POS_END);
+	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/js/custom/index.js', CClientScript::POS_END);
+	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/js/custom/sparkline.js', CClientScript::POS_END);
+	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/js/custom/jvectormap.js', CClientScript::POS_END);
+	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/js/custom/jquery-knob.js', CClientScript::POS_END);
 ?>
 
 <div class="row clearfix">

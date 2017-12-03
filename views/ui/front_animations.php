@@ -16,7 +16,7 @@
 		'Animations',
 	);
 	$cs = Yii::app()->getClientScript();
-	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/animations.js', CClientScript::POS_END);
+	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/js/custom/animations.js', CClientScript::POS_END);
 ?>
 
 <div class="row clearfix">

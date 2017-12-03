@@ -18,7 +18,7 @@
 	$cs = Yii::app()->getClientScript();
 	$cs->registerCssFile(Yii::app()->theme->baseUrl.'/plugins/fullcalendar/fullcalendar.css');
 	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/js/fullcalendarscripts.bundle.js', CClientScript::POS_END); 
-	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/calendar.js', CClientScript::POS_END); 
+	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/js/custom/calendar.js', CClientScript::POS_END); 
 ?>
 
 <div class="row page-calendar">

@@ -20,9 +20,9 @@
 	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/jquery-countto/jquery.countTo.js', CClientScript::POS_END); // Jquery CountTo Plugin Js
 	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/jquery-knob/jquery.knob.min.js', CClientScript::POS_END); // Jquery Knob Plugin Js
 	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/jquery-sparkline/jquery.sparkline.js', CClientScript::POS_END); // Sparkline Plugin Js
-	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/jquery-knob.js', CClientScript::POS_END);
-	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/sparkline.js', CClientScript::POS_END);
-	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/basic.js', CClientScript::POS_END);
+	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/js/custom/jquery-knob.js', CClientScript::POS_END);
+	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/js/custom/sparkline.js', CClientScript::POS_END);
+	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/js/custom/basic.js', CClientScript::POS_END);
 ?>
 
 <div class="row clearfix">

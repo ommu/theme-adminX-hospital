@@ -18,7 +18,7 @@
 	$cs = Yii::app()->getClientScript();
 	$cs->registerCssFile(Yii::app()->theme->baseUrl.'/plugins/sweetalert/sweetalert.css');
 	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/sweetalert/sweetalert.min.js', CClientScript::POS_END);
-	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/dialogs.js', CClientScript::POS_END);
+	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/js/custom/dialogs.js', CClientScript::POS_END);
 ?>
 
 <div class="row">

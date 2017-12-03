@@ -21,8 +21,8 @@
 	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/raphael/raphael.min.js', CClientScript::POS_END); // Morris Plugin Js
 	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/morrisjs/morris.js', CClientScript::POS_END); // Morris Plugin Js
 	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/h-timeline/h-timeline.js', CClientScript::POS_END); // Resource jQuery
-	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/index2.js', CClientScript::POS_END);
-	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/sparkline.js', CClientScript::POS_END);
+	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/js/custom/index2.js', CClientScript::POS_END);
+	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/js/custom/sparkline.js', CClientScript::POS_END);
 ?>
 
 <div class="row clearfix">

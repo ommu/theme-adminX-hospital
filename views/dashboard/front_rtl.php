@@ -21,8 +21,8 @@
 	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/jquery-sparkline/jquery.sparkline.js', CClientScript::POS_END); // Sparkline Plugin
 	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/chart.js/Chart.bundle.min.js', CClientScript::POS_END); // Chart Plugins Js
 	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/morrisjs/morris.js', CClientScript::POS_END); // Morris Plugin Js
-	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/sparkline.js', CClientScript::POS_END);
-	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/chartjs.js', CClientScript::POS_END);
+	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/js/custom/sparkline.js', CClientScript::POS_END);
+	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/js/custom/chartjs.js', CClientScript::POS_END);
 ?>
 <div class="row clearfix">
 	<div class="col-lg-12 col-md-12 col-sm-12">
