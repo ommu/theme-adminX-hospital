@@ -582,9 +582,9 @@
 <?php //end.Main sidebar ?>
 
 <?php //begin.Main Content ?>
-<section class="content <?php echo $currentAction == 'ui/profiles' ? 'profile-page' : '';?>">
+<section class="content <?php echo $currentAction == 'doctor/profile' ? 'profile-page' : '';?>">
 	<div class="container-fluid">
-		<?php if($currentAction != 'ui/profiles') {?>
+		<?php if($currentAction != 'doctor/profile') {?>
 		<div class="block-header">
 			<h2><?php echo CHtml::encode($this->pageTitle); ?></h2>
 			<ol class="breadcrumb">

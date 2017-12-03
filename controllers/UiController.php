@@ -39,7 +39,7 @@ class UiController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','typography','helperclasses','alerts','animations','badges','breadcrumbs','buttons','collapse','colors','dialogs','icons','labels','listgroup','mediaobject','modals','notifications','pagination','preloaders','progressbars','rangesliders','sortablenestable','tabs','waves','tables','boxeds','profiles','forms','graphics','graphics2'),
+				'actions'=>array('index','typography','helperclasses','alerts','animations','badges','breadcrumbs','buttons','collapse','colors','dialogs','icons','labels','listgroup','mediaobject','modals','notifications','pagination','preloaders','progressbars','rangesliders','sortablenestable','tabs','waves','graphics'),
 				'users'=>array('@'),
 			),
 			array('deny',  // deny all users
@@ -307,50 +307,6 @@ class UiController extends Controller
 		$this->pageDescription = '';
 		$this->pageMeta = '';
 		$this->render('front_waves');
-	}
-	
-	/**
-	 * Displays the login page
-	 */
-	public function actionTables()
-	{
-		$this->pageTitle = Yii::t('phrase', 'Tables');
-		$this->pageDescription = '';
-		$this->pageMeta = '';
-		$this->render('front_tables');
-	}
-	
-	/**
-	 * Displays the login page
-	 */
-	public function actionBoxeds()
-	{
-		$this->pageTitle = Yii::t('phrase', 'Boxeds');
-		$this->pageDescription = '';
-		$this->pageMeta = '';
-		$this->render('front_boxeds');
-	}
-	
-	/**
-	 * Displays the login page
-	 */
-	public function actionProfiles()
-	{
-		$this->pageTitle = Yii::t('phrase', 'Profiles');
-		$this->pageDescription = '';
-		$this->pageMeta = '';
-		$this->render('front_profiles');
-	}
-	
-	/**
-	 * Displays the login page
-	 */
-	public function actionForms()
-	{
-		$this->pageTitle = Yii::t('phrase', 'Forms');
-		$this->pageDescription = '';
-		$this->pageMeta = '';
-		$this->render('front_forms');
 	}
 	
 	/**

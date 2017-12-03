@@ -1,6 +1,6 @@
 <?php
 /**
- * @var $this UiController
+ * @var $this DoctorController
  * @var $error array
  * version: 1.3.0
  *
@@ -12,8 +12,7 @@
  */
 
 	$this->breadcrumbs=array(
-		'User Interface (UI)'=>array('index'),
-		'Boxeds',
+		'Doctors',
 	);
 ?>
 

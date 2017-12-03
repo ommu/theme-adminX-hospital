@@ -1,6 +1,6 @@
 <?php
 /**
- * @var $this UiController
+ * @var $this DoctorController
  * @var $error array
  * version: 1.3.0
  *
@@ -12,12 +12,12 @@
  */
 
 	$this->breadcrumbs=array(
-		'User Interface (UI)'=>array('index'),
+		'Doctors'=>array('index'),
 		'Profiles',
 	);
 ?>
 
-<div class="row clearfix">
+<div class="row profile-page">
 	<div class="col-lg-4 col-md-4 col-sm-12">
 		<div class="card xl-blue text-center">
 			<img src="<?php echo Yii::app()->theme->baseUrl;?>/images/preview/team_member.png" class="" alt="profile-image">
