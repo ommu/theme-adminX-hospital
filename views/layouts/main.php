@@ -53,7 +53,11 @@
 <?php //begin.Top Bar ?>
 <nav class="navbar clearHeader">
 	<div class="navbar-header">
-		<a href="javascript:void(0);" class="bars"></a> <a class="navbar-brand" href="index.html"><img class="logo" src="<?php echo Yii::app()->theme->baseUrl;?>/images/logo.svg" alt="profile img">Hospital</a>	
+		<a href="javascript:void(0);" class="bars"></a>
+		<a class="navbar-brand" href="index.html"><img class="logo" src="<?php echo Yii::app()->theme->baseUrl;?>/images/logo.svg" alt="profile img">Hospital</a>
+	<?php if($currentAction == 'dashboard/rtl') {?>
+	</div>
+	<?php }?>
 		<ul class="nav navbar-nav navbar-right">
 			<li><a href="javascript:void(0);" class="js-search" data-close="true"><i class="zmdi zmdi-search"></i></a></li>
 			<li class="dropdown menu-app"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button"> <i class="zmdi zmdi-apps"></i> </a>
@@ -218,9 +222,11 @@
 				</ul>
 			</li>
 			<li><a href="<?php echo Yii::app()->createUrl('site/logout');?>" title="<?php echo Yii::t('phrase', 'Logout');?>" class="mega-menu" data-close="true"><i class="zmdi zmdi-power"></i></a></li>
-			<li class="pull-right"><a href="javascript:void(0);" class="js-right-sidebar" data-close="true"><i class="zmdi zmdi-sort-amount-desc"></i></a></li>			
+			<li class="pull-right"><a href="javascript:void(0);" class="js-right-sidebar" data-close="true"><i class="zmdi zmdi-sort-amount-desc"></i></a></li>
 		</ul>
+	<?php if($currentAction != 'dashboard/rtl') {?>
 	</div>
+	<?php }?>
 </nav>
 <?php //end.Top Bar ?>
 
