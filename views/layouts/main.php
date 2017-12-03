@@ -54,7 +54,7 @@
 <nav class="navbar clearHeader">
 	<div class="navbar-header">
 		<a href="javascript:void(0);" class="bars"></a>
-		<a class="navbar-brand" href="index.html"><img class="logo" src="<?php echo Yii::app()->theme->baseUrl;?>/images/logo.svg" alt="profile img">Hospital</a>
+		<a class="navbar-brand" href="<?php echo Yii::app()->createUrl('site/index');?>"><img class="logo" src="<?php echo Yii::app()->theme->baseUrl;?>/images/logo.svg" alt="profile img">Hospital</a>
 	<?php if($currentAction == 'dashboard/rtl') {?>
 	</div>
 	<?php }?>
@@ -246,16 +246,16 @@
 							<h3>Dr.John Smith</h3>
 							<ul>
 								<li><a data-placement="bottom" title="Go to Inbox" href="mail-inbox.html"><i class="zmdi zmdi-email"></i></a></li>
-								<li><a data-placement="bottom" title="Go to Profile" href="profile.html"><i class="zmdi zmdi-account"></i></a></li>
-								<li><a data-placement="bottom" title="Full Screen" href="sign-in.html" ><i class="zmdi zmdi-sign-in"></i></a></li>
+								<li><a data-placement="bottom" title="Go to Profile" href="<?php echo Yii::app()->createUrl('doctor/profile');?>"><i class="zmdi zmdi-account"></i></a></li>
+								<li><a data-placement="bottom" title="Full Screen" href="<?php echo Yii::app()->createUrl('site/login');?>" ><i class="zmdi zmdi-sign-in"></i></a></li>
 							</ul>
 						</div>
 					</div>
 					<?php //end.User Info ?>
 				</li>
 				<li class="header">MAIN NAVIGATION</li>
-				<li class="active open"><a href="index.html"><i class="zmdi zmdi-home"></i><span>Dashboard</span></a></li>
-				<li><a href="dashboard-rtl.html"><i class="zmdi zmdi-home"></i><span>Dashboard RTL</span></a></li>											   
+				<li class="active open"><a href="<?php echo Yii::app()->createUrl('site/index');?>"><i class="zmdi zmdi-home"></i><span>Dashboard</span></a></li>
+				<li><a href="dashboard-rtl.html"><i class="zmdi zmdi-home"></i><span>Dashboard RTL</span></a></li>
 				<li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-calendar-check"></i><span>Appointment</span> </a>
 					<ul class="ml-menu">
 						<li><a href="doctor-schedule.html">Doctor Schedule</a></li>
@@ -264,16 +264,16 @@
 				</li>
 				<li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-account-add"></i><span>Doctors</span> </a>
 					<ul class="ml-menu">
-						<li><a href="doctors.html">All Doctors</a></li>
+						<li><a href="<?php echo Yii::app()->createUrl('doctor/index');?>">All Doctors</a></li>
 						<li><a href="add-doctor.html">Add Doctor</a></li>					   
-						<li><a href="profile.html">Doctor Profile</a></li>
+						<li><a href="<?php echo Yii::app()->createUrl('doctor/profile');?>">Doctor Profile</a></li>
 					</ul>
 				</li>
 				<li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-account-o"></i><span>Patients</span> </a>
 					<ul class="ml-menu">
 						<li><a href="patients.html">All Patients</a></li>
-						<li><a href="add-patient.html">Add Patient</a></li>					   
-						<li><a href="patient-profile.html">Patient Profile</a></li>
+						<li><a href="add-patient.html">Add Patient</a></li>
+						<li><a href="patient-<?php echo Yii::app()->createUrl('doctor/profile');?>">Patient Profile</a></li>
 						<li><a href="patient-invoice.html">Patient Invoice</a></li>
 					</ul>
 				</li>
@@ -288,7 +288,7 @@
 				<li><a href="widgets.html"><i class="zmdi zmdi-delicious"></i><span>Widgets</span></a></li>
 				<li> <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-copy"></i><span>Extra Pages</span> </a>
 					<ul class="ml-menu">
-						<li> <a href="sign-in.html">Sign In</a> </li>
+						<li> <a href="<?php echo Yii::app()->createUrl('site/login');?>">Sign In</a> </li>
 						<li> <a href="sign-up.html">Sign Up</a> </li>
 						<li> <a href="forgot-password.html">Forgot Password</a> </li>
 						<li> <a href="404.html">Page 404</a> </li>
@@ -588,9 +588,9 @@
 <?php //end.Main sidebar ?>
 
 <?php //begin.Main Content ?>
-<section class="content <?php echo $currentAction == 'doctor/profile' ? 'profile-page' : '';?>">
+<section class="content <?php echo $currentAction == 'doctor/profile' ? 'profile-page' : ($currentAction == 'extra/chat' ? 'chat-app' : '');?>">
 	<div class="container-fluid">
-		<?php if($currentAction != 'doctor/profile') {?>
+		<?php if(!in_array($currentAction, array('doctor/profile','extra/chat'))) {?>
 		<div class="block-header">
 			<h2><?php echo CHtml::encode($this->pageTitle); ?></h2>
 			<ol class="breadcrumb">

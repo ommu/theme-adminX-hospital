@@ -32,7 +32,7 @@
 						<li><a title="instagram" href="3" ><i class="zmdi zmdi-instagram"></i></a></li>
 					</ul>
 					<p class="text-muted">795 Folsom Ave, Suite 600 San Francisco, CADGE 94107</p>
-					<a href="<?php echo Yii::app()->controller->createUrl('profiles');?>"  class="btn btn-raised btn-sm">View Profile</a>
+					<a href="<?php echo Yii::app()->controller->createUrl('profile');?>"  class="btn btn-raised btn-sm">View Profile</a>
 				</div>
 			</div>
 		</div>
@@ -52,7 +52,7 @@
 						<li><a title="instagram" href="3" ><i class="zmdi zmdi-instagram"></i></a></li>
 					</ul>
 					<p class="text-muted">795 Folsom Ave, Suite 600 San Francisco, CADGE 94107</p>
-					<a href="<?php echo Yii::app()->controller->createUrl('profiles');?>"  class="btn btn-raised btn-sm">View Profile</a>
+					<a href="<?php echo Yii::app()->controller->createUrl('profile');?>"  class="btn btn-raised btn-sm">View Profile</a>
 				</div>
 			</div>
 		</div>
@@ -72,7 +72,7 @@
 						<li><a title="instagram" href="3" ><i class="zmdi zmdi-instagram"></i></a></li>
 					</ul>
 					<p class="text-muted">795 Folsom Ave, Suite 600 San Francisco, CADGE 94107</p>
-					<a href="<?php echo Yii::app()->controller->createUrl('profiles');?>"  class="btn btn-raised btn-sm">View Profile</a>
+					<a href="<?php echo Yii::app()->controller->createUrl('profile');?>"  class="btn btn-raised btn-sm">View Profile</a>
 				</div>
 			</div>
 		</div>
@@ -92,7 +92,7 @@
 						<li><a title="instagram" href="3" ><i class="zmdi zmdi-instagram"></i></a></li>
 					</ul>
 					<p class="text-muted">795 Folsom Ave, Suite 600 San Francisco, CADGE 94107</p>
-					<a href="<?php echo Yii::app()->controller->createUrl('profiles');?>"  class="btn btn-raised btn-sm">View Profile</a>
+					<a href="<?php echo Yii::app()->controller->createUrl('profile');?>"  class="btn btn-raised btn-sm">View Profile</a>
 				</div>
 			</div>
 		</div>
@@ -112,7 +112,7 @@
 						<li><a title="instagram" href="3" ><i class="zmdi zmdi-instagram"></i></a></li>
 					</ul>
 					<p class="text-muted">795 Folsom Ave, Suite 600 San Francisco, CADGE 94107</p>
-					<a href="<?php echo Yii::app()->controller->createUrl('profiles');?>"  class="btn btn-raised btn-sm">View Profile</a>
+					<a href="<?php echo Yii::app()->controller->createUrl('profile');?>"  class="btn btn-raised btn-sm">View Profile</a>
 				</div>
 			</div>
 		</div>
@@ -132,7 +132,7 @@
 						<li><a title="instagram" href="3" ><i class="zmdi zmdi-instagram"></i></a></li>
 					</ul>
 					<p class="text-muted">795 Folsom Ave, Suite 600 San Francisco, CADGE 94107</p>
-					<a href="<?php echo Yii::app()->controller->createUrl('profiles');?>"  class="btn btn-raised btn-sm">View Profile</a>
+					<a href="<?php echo Yii::app()->controller->createUrl('profile');?>"  class="btn btn-raised btn-sm">View Profile</a>
 				</div>
 			</div>
 		</div>
@@ -152,7 +152,7 @@
 						<li><a title="instagram" href="3" ><i class="zmdi zmdi-instagram"></i></a></li>
 					</ul>
 					<p class="text-muted">795 Folsom Ave, Suite 600 San Francisco, CADGE 94107</p>
-					<a href="<?php echo Yii::app()->controller->createUrl('profiles');?>"  class="btn btn-raised btn-sm">View Profile</a>
+					<a href="<?php echo Yii::app()->controller->createUrl('profile');?>"  class="btn btn-raised btn-sm">View Profile</a>
 				</div>
 			</div>
 		</div>
@@ -172,7 +172,7 @@
 						<li><a title="instagram" href="3" ><i class="zmdi zmdi-instagram"></i></a></li>
 					</ul>
 					<p class="text-muted">795 Folsom Ave, Suite 600 San Francisco, CADGE 94107</p>
-					<a href="<?php echo Yii::app()->controller->createUrl('profiles');?>"  class="btn btn-raised btn-sm">View Profile</a>
+					<a href="<?php echo Yii::app()->controller->createUrl('profile');?>"  class="btn btn-raised btn-sm">View Profile</a>
 				</div>
 			</div>
 		</div>
@@ -180,6 +180,6 @@
 </div>
 <div class="row clearfix">
 	<div class="col-sm-12 text-center">
-		<a href="" class="btn btn-raised g-bg-cyan m-t-20 m-b-20">Add Doctor</a>
+		<a href="<?php echo Yii::app()->controller->createUrl('add');?>" class="btn btn-raised g-bg-cyan m-t-20 m-b-20">Add Doctor</a>
 	</div>
 </div>
