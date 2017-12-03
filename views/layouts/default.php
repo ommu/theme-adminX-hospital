@@ -95,7 +95,7 @@
   <meta name="author" content="Ommu Platform (support@ommu.co)" />
   <link rel="shortcut icon" href="<?php echo Yii::app()->theme->baseUrl;?>/favicon.ico" />
  </head>
- <body class="theme-cyan">
+ <body class="theme-cyan <?php echo $currentAction == 'dashboard/rtl' ? 'rtl' : '';?>">
 
 	<?php echo $content;?>
 	<?php $this->widget('FrontGoogleAnalytics'); ?>

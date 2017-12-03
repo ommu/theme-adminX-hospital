@@ -82,28 +82,28 @@
 					<li class="body">
 						<ul class="menu">
 							<li> <a href="javascript:void(0);">
-								<div class="icon-circle"> <img src="assets/images/xs/avatar1.jpg" alt=""> </div>
+								<div class="icon-circle"> <img src="<?php echo Yii::app()->theme->baseUrl;?>/images/avatar.jpg" alt=""> </div>
 								<div class="menu-info">
 									<h4>David Belle</h4>
 									<p class="ellipsis">Cum sociis natoque penatibus et magnis dis parturient montes</p>
 								</div>
 								</a> </li>
 							<li> <a href="javascript:void(0);">
-								<div class="icon-circle"> <img src="assets/images/xs/avatar2.jpg" alt=""> </div>
+								<div class="icon-circle"> <img src="<?php echo Yii::app()->theme->baseUrl;?>/images/avatar.jpg" alt=""> </div>
 								<div class="menu-info">
 									<h4>David Belle</h4>
 									<p class="ellipsis">Cum sociis natoque penatibus et magnis dis parturient montes</p>
 								</div>
 								</a> </li>
 							<li> <a href="javascript:void(0);">
-								<div class="icon-circle"> <img src="assets/images/xs/avatar3.jpg" alt=""> </div>
+								<div class="icon-circle"> <img src="<?php echo Yii::app()->theme->baseUrl;?>/images/avatar.jpg" alt=""> </div>
 								<div class="menu-info">
 									<h4>David Belle</h4>
 									<p class="ellipsis">Cum sociis natoque penatibus et magnis dis parturient montes</p>
 								</div>
 								</a> </li>
 							<li> <a href="javascript:void(0);">
-								<div class="icon-circle"> <img src="assets/images/xs/avatar4.jpg" alt=""> </div>
+								<div class="icon-circle"> <img src="<?php echo Yii::app()->theme->baseUrl;?>/images/avatar.jpg" alt=""> </div>
 								<div class="menu-info">
 									<h4>David Belle</h4>
 									<p class="ellipsis">Cum sociis natoque penatibus et magnis dis parturient montes</p>
@@ -438,38 +438,38 @@
 						<h6>Online</h6>
 						<ul>
 							<li class="online">
-								<div class="media"> <a  role="button" tabindex="0"> <img class="media-object " src="assets/images/xs/avatar1.jpg" alt=""> </a>
+								<div class="media"> <a  role="button" tabindex="0"> <img class="media-object " src="<?php echo Yii::app()->theme->baseUrl;?>/images/avatar.jpg" alt=""> </a>
 									<div class="media-body"> <span class="name">Claire Sassu</span> <span class="message">Can you share the simply dummy text</span> <span class="badge badge-outline status"></span> </div>
 								</div>
 							</li>
 							<li class="online">
-								<div class="media"> <a  role="button" tabindex="0"> <img class="media-object " src="assets/images/xs/avatar2.jpg" alt=""> </a>
+								<div class="media"> <a  role="button" tabindex="0"> <img class="media-object " src="<?php echo Yii::app()->theme->baseUrl;?>/images/avatar.jpg" alt=""> </a>
 									<div class="media-body">
 										<div class="media-body"> <span class="name">Maggie jackson</span> <span class="message">Can you share the simply dummy text</span> <span class="badge badge-outline status"></span> </div>
 									</div>
 								</div>
 							</li>
 							<li class="online">
-								<div class="media"> <a  role="button" tabindex="0"> <img class="media-object " src="assets/images/xs/avatar3.jpg" alt=""> </a>
+								<div class="media"> <a  role="button" tabindex="0"> <img class="media-object " src="<?php echo Yii::app()->theme->baseUrl;?>/images/avatar.jpg" alt=""> </a>
 									<div class="media-body">
 										<div class="media-body"> <span class="name">Joel King</span> <span class="message">Ready for the meeti simply dummy text</span> <span class="badge badge-outline status"></span> </div>
 									</div>
 								</div>
 							</li>
 							<li class="online">
-								<div class="media"> <a  role="button" tabindex="0"> <img class="media-object " src="assets/images/xs/avatar1.jpg" alt=""> </a>
+								<div class="media"> <a  role="button" tabindex="0"> <img class="media-object " src="<?php echo Yii::app()->theme->baseUrl;?>/images/avatar.jpg" alt=""> </a>
 									<div class="media-body"> <span class="name">Claire Sassu</span> <span class="message">Can you share the simply dummy text</span> <span class="badge badge-outline status"></span> </div>
 								</div>
 							</li>
 							<li class="online">
-								<div class="media"> <a  role="button" tabindex="0"> <img class="media-object " src="assets/images/xs/avatar2.jpg" alt=""> </a>
+								<div class="media"> <a  role="button" tabindex="0"> <img class="media-object " src="<?php echo Yii::app()->theme->baseUrl;?>/images/avatar.jpg" alt=""> </a>
 									<div class="media-body">
 										<div class="media-body"> <span class="name">Maggie jackson</span> <span class="message">Can you share the simply dummy text</span> <span class="badge badge-outline status"></span> </div>
 									</div>
 								</div>
 							</li>
 							<li class="online">
-								<div class="media"> <a  role="button" tabindex="0"> <img class="media-object " src="assets/images/xs/avatar3.jpg" alt=""> </a>
+								<div class="media"> <a  role="button" tabindex="0"> <img class="media-object " src="<?php echo Yii::app()->theme->baseUrl;?>/images/avatar.jpg" alt=""> </a>
 									<div class="media-body">
 										<div class="media-body"> <span class="name">Joel King</span> <span class="message">Ready for the meeti simply dummy text</span> <span class="badge badge-outline status"></span> </div>
 									</div>
@@ -479,19 +479,19 @@
 						<h6>Offline</h6>
 						<ul>
 							<li class="offline">
-								<div class="media"> <a  role="button" tabindex="0"> <img class="media-object " src="assets/images/xs/avatar4.jpg" alt=""> </a>
+								<div class="media"> <a  role="button" tabindex="0"> <img class="media-object " src="<?php echo Yii::app()->theme->baseUrl;?>/images/avatar.jpg" alt=""> </a>
 									<div class="media-body"> <span class="name">Claire Sassu</span> <span class="message">Can you share the simply dummy text</span> <span class="badge badge-outline status"></span> </div>
 								</div>
 							</li>
 							<li class="offline">
-								<div class="media"> <a  role="button" tabindex="0"> <img class="media-object " src="assets/images/xs/avatar2.jpg" alt=""> </a>
+								<div class="media"> <a  role="button" tabindex="0"> <img class="media-object " src="<?php echo Yii::app()->theme->baseUrl;?>/images/avatar.jpg" alt=""> </a>
 									<div class="media-body">
 										<div class="media-body"> <span class="name">Maggie jackson</span> <span class="message">Can you share the you share the</span> <span class="badge badge-outline status"></span> </div>
 									</div>
 								</div>
 							</li>
 							<li class="offline">
-								<div class="media"> <a  role="button" tabindex="0"> <img class="media-object " src="assets/images/xs/avatar1.jpg" alt=""> </a>
+								<div class="media"> <a  role="button" tabindex="0"> <img class="media-object " src="<?php echo Yii::app()->theme->baseUrl;?>/images/avatar.jpg" alt=""> </a>
 									<div class="media-body">
 										<div class="media-body"> <span class="name">Joel King</span> <span class="message">Ready for the meeti</span> <span class="badge badge-outline status"></span> </div>
 									</div>
@@ -578,19 +578,24 @@
 		</div>
 	</aside>
 	<?php //end.Right Sidebar ?>
-<section>
+</section>
 <?php //end.Main sidebar ?>
 
 <?php //begin.Main Content ?>
-<section class="content">
+<section class="content <?php echo $currentAction == 'ui/profiles' ? 'profile-page' : '';?>">
 	<div class="container-fluid">
+		<?php if($currentAction != 'ui/profiles') {?>
 		<div class="block-header">
-			<h2>Dashboard</h2>
+			<h2><?php echo CHtml::encode($this->pageTitle); ?></h2>
 			<ol class="breadcrumb">
-				<li><a href="index.html">Home</a></li>
-				<li class="active">Dashboard</li>
+				<?php 
+					$this->widget('Breadcrumbs', array(
+						'links' => Yii::app()->controller->breadcrumbs,
+					)); 
+				?>
 			</ol>
 		</div>
+		<?php }?>
 
 		<?php echo $content;?>
 	</div>
