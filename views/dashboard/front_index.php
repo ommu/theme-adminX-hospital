@@ -20,7 +20,7 @@
 	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/js/sparkline.bundle.js', CClientScript::POS_END); 
 	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/js/flotscripts.bundle.js', CClientScript::POS_END); 
 	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/js/morrisscripts.bundle.js', CClientScript::POS_END); 
-	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/jquery-knob/jquery.knob.min.js', CClientScript::POS_END); 
+	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/jquery-knob/jquery.knob.min.js', CClientScript::POS_END); // Jquery Knob Plugin Js
 	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/js/countto.bundle.js', CClientScript::POS_END); 
 	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/jvectormap/jquery-jvectormap-2.0.3.min.js', CClientScript::POS_END); 
 	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/jvectormap/jquery-jvectormap-world-mill-en.js', CClientScript::POS_END); 

@@ -1,6 +1,6 @@
 <?php
 /**
- * @var $this UiController
+ * @var $this ReportsController
  * @var $error array
  * version: 1.3.0
  *
@@ -12,8 +12,7 @@
  */
 
 	$this->breadcrumbs=array(
-		'User Interface (UI)'=>array('index'),
-		'Graphics',
+		'Reports',
 	);
 	$cs = Yii::app()->getClientScript();
 	$cs->registerCssFile(Yii::app()->theme->baseUrl.'/plugins/morrisjs/morris.css');

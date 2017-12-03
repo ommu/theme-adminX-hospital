@@ -39,7 +39,7 @@ class UiController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','typography','helperclasses','alerts','animations','badges','breadcrumbs','buttons','collapse','colors','dialogs','icons','labels','listgroup','mediaobject','modals','notifications','pagination','preloaders','progressbars','rangesliders','sortablenestable','tabs','waves','graphics'),
+				'actions'=>array('index','typography','helperclasses','alerts','animations','badges','breadcrumbs','buttons','collapse','colors','dialogs','icons','labels','listgroup','mediaobject','modals','notifications','pagination','preloaders','progressbars','rangesliders','sortablenestable','tabs','waves'),
 				'users'=>array('@'),
 			),
 			array('deny',  // deny all users
@@ -307,16 +307,5 @@ class UiController extends Controller
 		$this->pageDescription = '';
 		$this->pageMeta = '';
 		$this->render('front_waves');
-	}
-	
-	/**
-	 * Displays the login page
-	 */
-	public function actionGraphics()
-	{
-		$this->pageTitle = Yii::t('phrase', 'Graphics');
-		$this->pageDescription = '';
-		$this->pageMeta = '';
-		$this->render('front_graphics');
 	}
 }
