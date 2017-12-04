@@ -30,4 +30,62 @@ class SidebarMenuBackoffice extends CWidget
 			'currentModuleAction'=>$currentModuleAction,
 		));	
 	}
+
+	public function generateMenu($menus, $mod)
+	{
+		$module = strtolower(Yii::app()->controller->module->id);
+		$controller = strtolower(Yii::app()->controller->id);
+		$action = strtolower(Yii::app()->controller->action->id);
+		$currentAction = strtolower(Yii::app()->controller->id.'/'.Yii::app()->controller->action->id);
+		$currentModule = strtolower(Yii::app()->controller->module->id.'/'.Yii::app()->controller->id);
+		$currentModuleAction = strtolower(Yii::app()->controller->module->id.'/'.Yii::app()->controller->id.'/'.Yii::app()->controller->action->id);
+
+		if($menus != null) {
+			foreach($menus as $key => $val) {
+				$submenu = $val['submenu'];
+	
+				$arrAttrParams = array();
+				if($val['urlPath']['attr'] != null && $val['urlPath']['attr'] != '-') {
+					$arrAttr = explode(',', $val['urlPath']['attr']);
+					if(count($arrAttr) > 0) {
+						foreach($arrAttr as $row) {
+							$part = explode('=', $row);
+							if(strpos($part[1], '$_GET') !== false) {
+								$list = explode('*', $part[1]);
+								if(count($list) == 2)
+									$arrAttrParams[$part[0]] = $_GET[$list[1]];
+								elseif(count($list) == 3)
+									$arrAttrParams[$part[0]] = $_GET[$list[1]][$list[2]];
+								elseif(count($list) == 4)
+									$arrAttrParams[$part[0]] = $_GET[$list[1]][$list[2]][$list[3]];
+								elseif(count($list) == 5)
+									$arrAttrParams[$part[0]] = $_GET[$list[1]][$list[2]][$list[3]][$list[4]];
+							} else
+								$arrAttrParams[$part[0]] = $part[1];
+						}
+					}
+				}
+	
+				$liClass = '';
+				if($val['urlPath']['url'] != null && $val['urlPath']['url'] != '-') {
+					$controllerArray = explode('/', $controller);
+					$urlArray = explode('/', $val['urlPath']['url']);
+					array_pop($urlArray);
+					$liClass = $controller == implode('/', $urlArray) ? 'class="active"' : '';
+				}
+
+				$url = $val['urlPath']['url'] != null && $val['urlPath']['url'] != '-' ? Yii::app()->createUrl($mod.'/'.$val['urlPath']['url'], $arrAttrParams) : 'javascript:void(0)';
+				$aClass = $submenu != null ? array('class'=>'menu-toggle') : '';
+	
+				echo '<li '.$liClass.'>';
+				echo CHtml::link(Yii::t('phrase', $val['urlTitle']), $url, $aClass);
+				if($submenu != null) {
+					echo '<ul class="ml-menu">';
+						$this->generateMenu($submenu, $mod);
+					echo '</ul>';
+				}
+				echo '</li>';
+			}
+		}
+	}
 }

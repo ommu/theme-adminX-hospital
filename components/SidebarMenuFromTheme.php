@@ -94,9 +94,9 @@ class SidebarMenuFromTheme extends CWidget
 						}
 						$icon = $sub == false ? ($val['urlPath']['icon'] != null && $val['urlPath']['icon'] != '-' ? CHtml::tag('i', array('class'=>$val['urlPath']['icon']), '') : CHtml::tag('i', array('class'=>'zmdi zmdi-home'), '')) : '';
 						$menu = $sub == false ? CHtml::tag('span', array(), Yii::t('phrase', $val['urlTitle'])) : Yii::t('phrase', $val['urlTitle']);
-						$aClass = $submenu != null ? array('class'=>'menu-toggle') : '';
-	
 						$url = $val['urlPath']['url'] != null && $val['urlPath']['url'] != '-' ? Yii::app()->createUrl($val['urlPath']['url'], $arrAttrParams) : 'javascript:void(0);';
+						$aClass = $submenu != null ? array('class'=>'menu-toggle') : '';
+
 						echo '<li '.$liClass.'>';
 						echo CHtml::link($icon.$menu, $url, $aClass);
 						if($submenu != null) {
