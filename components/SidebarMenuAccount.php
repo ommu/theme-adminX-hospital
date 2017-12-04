@@ -1,7 +1,12 @@
 <?php
 class SidebarMenuAccount extends CWidget
 {
+	public $imageDefault;
+	
 	public function init() {
+		$imageDefault = 'public/users/default.png';
+		if(file_exists($imageDefault))
+			$this->imageDefault = Yii::app()->request->baseUrl.'/'.$imageDefault;
 	}
 
 	public function run() {
@@ -16,7 +21,12 @@ class SidebarMenuAccount extends CWidget
 		$currentModule = strtolower(Yii::app()->controller->module->id.'/'.Yii::app()->controller->id);
 		$currentModuleAction = strtolower(Yii::app()->controller->module->id.'/'.Yii::app()->controller->id.'/'.Yii::app()->controller->action->id);
 
+		$model = Users::model()->findByPk(Yii::app()->user->id, array(
+			'select' => 'photos',
+		));
+
 		$this->render('sidebar_menu_account',array(
+			'model'=>$model,
 			'module'=>$module,
 			'controller'=>$controller,
 			'action'=>$action,
