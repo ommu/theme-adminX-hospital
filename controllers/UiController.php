@@ -191,7 +191,7 @@ class UiController extends Controller
 	/**
 	 * Displays the login page
 	 */
-	public function actionListgroups()
+	public function actionListgroup()
 	{
 		$this->pageTitle = Yii::t('phrase', 'List groups');
 		$this->pageDescription = '';
