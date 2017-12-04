@@ -4,7 +4,8 @@
 	<div class="menu">
 		<ul class="list">
 			<?php $this->widget('SidebarMenuAccount'); // Sidebar Menu Account ?>
-			<?php $this->widget('SidebarMenuFromTheme'); // Sidebar Menu Account ?>
+			<?php $this->widget('SidebarMenuBackoffice'); // Sidebar Menu Backoffice ?>
+			<?php $this->widget('SidebarMenuFromTheme'); // Sidebar Menu Theme ?>
 		</ul>
 	</div>
 	<?php //end.Menu ?>

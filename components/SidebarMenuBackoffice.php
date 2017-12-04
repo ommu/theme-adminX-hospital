@@ -1,5 +1,5 @@
 <?php
-class MenuMain extends CWidget
+class SidebarMenuBackoffice extends CWidget
 {
 	public function init() {
 	}
@@ -20,7 +20,7 @@ class MenuMain extends CWidget
 			'select' => 'site_type'
 		));
 
-		$this->render('menu_main',array(
+		$this->render('sidebar_menu_backoffice',array(
 			'setting'=>$setting,
 			'module'=>$module,
 			'controller'=>$controller,

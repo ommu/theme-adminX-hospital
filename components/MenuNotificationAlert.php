@@ -17,7 +17,6 @@ class MenuNotificationAlert extends CWidget
 		$currentModuleAction = strtolower(Yii::app()->controller->module->id.'/'.Yii::app()->controller->id.'/'.Yii::app()->controller->action->id);
 
 		$this->render('menu_notification_alert',array(
-			'setting'=>$setting,
 			'module'=>$module,
 			'controller'=>$controller,
 			'action'=>$action,

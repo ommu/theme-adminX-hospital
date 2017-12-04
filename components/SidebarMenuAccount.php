@@ -17,7 +17,6 @@ class SidebarMenuAccount extends CWidget
 		$currentModuleAction = strtolower(Yii::app()->controller->module->id.'/'.Yii::app()->controller->id.'/'.Yii::app()->controller->action->id);
 
 		$this->render('sidebar_menu_account',array(
-			'setting'=>$setting,
 			'module'=>$module,
 			'controller'=>$controller,
 			'action'=>$action,
