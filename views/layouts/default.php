@@ -84,6 +84,9 @@
 		$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/js/libscripts.bundle.js', CClientScript::POS_BEGIN); // Bootstrap JS and jQuery v3.2.1
 		$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/js/vendorscripts.bundle.js', CClientScript::POS_BEGIN); // slimscroll, waves Scripts Plugin Js
 		$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/js/mainscripts.bundle.js', CClientScript::POS_END); // Custom Js
+		Yii::app()->clientScript->scriptMap=array(
+			'jquery.js'=>false,
+		);
 	?>
 <!DOCTYPE html>
 <html>
