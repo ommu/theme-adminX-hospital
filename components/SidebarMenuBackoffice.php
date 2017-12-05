@@ -67,12 +67,16 @@ class SidebarMenuBackoffice extends CWidget
 				}
 	
 				$liClass = '';
+				$controllerArray = explode('/', $controller);
+				$controllerVaribale = array();
 				if($val['urlPath']['url'] != null && $val['urlPath']['url'] != '-') {
-					$controllerArray = explode('/', $controller);
 					$urlArray = explode('/', $val['urlPath']['url']);
 					array_pop($urlArray);
-					$liClass = $controller == implode('/', $urlArray) ? 'class="active"' : '';
+					$controllerVaribale[] = implode('/', $urlArray);
 				}
+				if($submenu != null)
+					$controllerVaribale = array_merge($controllerVaribale, $this->getControllerVaribale($submenu));
+				$liClass = in_array($controller, $controllerVaribale) ? 'class="active"' : '';
 
 				$url = $val['urlPath']['url'] != null && $val['urlPath']['url'] != '-' ? Yii::app()->createUrl($mod.'/'.$val['urlPath']['url'], $arrAttrParams) : 'javascript:void(0)';
 				$aClass = $submenu != null ? array('class'=>'menu-toggle') : '';
@@ -87,5 +91,18 @@ class SidebarMenuBackoffice extends CWidget
 				echo '</li>';
 			}
 		}
+	}
+
+	public function getControllerVaribale($submenu)
+	{
+		$controllerVaribale = array();
+
+		foreach($submenu as $key => $val) {
+			$urlArray = explode('/', $val['urlPath']['url']);
+			array_pop($urlArray);
+			$controllerVaribale[] = implode('/', $urlArray);
+		}
+
+		return $controllerVaribale;
 	}
 }
