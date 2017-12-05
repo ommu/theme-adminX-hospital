@@ -53,7 +53,7 @@
 	<div class="col-lg-12 col-md-12 col-sm-12">
 		<div class="card">
 			<div class="header">
-				<h2> BASIC EXAMPLES <small>Extend the default collapse behavior to create an accordion with the panel component.</small> </h2>                        
+				<h2> BASIC EXAMPLES <small>Extend the default collapse behavior to create an accordion with the panel component.</small> </h2>
 			</div>
 			<div class="body">
 				<div class="panel-group" id="accordion_1" role="tablist" aria-multiselectable="true">

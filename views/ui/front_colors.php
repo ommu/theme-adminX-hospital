@@ -62,7 +62,7 @@
 							<div class="color-class-name">g-bg-purple</div>
 						</div>
 					</div>
-				</div>                        
+				</div>
 			</div>
 		</div>
 	</div>

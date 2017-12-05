@@ -44,7 +44,7 @@
 					<div class="col-sm-12 col-md-6 col-lg-6">
 						<h5>A warning message, with a function attached to the <b>Confirm</b> button...</p>
 						<button class="btn btn-raised btn-primary waves-effect" data-type="confirm">CLICK ME</button>
-					</div>                            
+					</div>
 					<div class="col-sm-12 col-md-6 col-lg-6">
 						<h5>A message with a custom icon</h5>
 						<button class="btn btn-raised btn-primary waves-effect" data-type="with-custom-icon">CLICK ME</button>

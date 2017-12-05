@@ -179,7 +179,7 @@
 							<tr>
 								<th>Media</th>
 								<th>Name</th>
-								<th>Like</th>                                                                                
+								<th>Like</th>
 								<th>Comments</th>
 								<th>Share</th>
 								<th>Members</th>

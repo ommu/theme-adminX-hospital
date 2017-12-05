@@ -26,16 +26,6 @@ theme_menu		:
 			- urlTitle: Book Appointment
 				urlRules: {siteType: -, userLevel: -}
 				urlPath: {url: appointment/book, attr: -, icon: -}
-			- urlTitle: Appointment
-				urlRules: {siteType: -, userLevel: -}
-				urlPath: {url: -, attr: -, icon: "zmdi zmdi-calendar-check"}
-				submenu :
-					- urlTitle: Doctor Schedule
-						urlRules: {siteType: -, userLevel: -}
-						urlPath: {url: appointment/schedule, attr: -, icon: -}
-					- urlTitle: Book Appointment
-						urlRules: {siteType: -, userLevel: -}
-						urlPath: {url: appointment/book, attr: -, icon: -}
 
 	- urlTitle: Doctors
 		urlRules: {siteType: -, userLevel: -}

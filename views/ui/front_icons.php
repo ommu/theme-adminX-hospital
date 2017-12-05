@@ -687,7 +687,7 @@
 		</div>
 		<div class="card">
 			<div class="header">
-				<h2> ALERT </h2>                       
+				<h2> ALERT </h2>
 			</div>
 			<div class="body">
 				<div class="row clearfix demo-icon-container">
@@ -708,7 +708,7 @@
 		</div>
 		<div class="card">
 			<div class="header">
-				<h2>AV </h2>                       
+				<h2>AV </h2>
 			</div>
 			<div class="body">
 				<div class="row clearfix demo-icon-container">
@@ -957,7 +957,7 @@
 		</div>
 		<div class="card">
 			<div class="header">
-				<h2> COMMUNICATION </h2>                        
+				<h2> COMMUNICATION </h2>
 			</div>
 			<div class="body">
 				<div class="row clearfix demo-icon-container">

@@ -41,7 +41,7 @@
 								<th>Patient</th>
 								<th>Doctor</th>
 								<th>Charges</th>
-								<th>Tax</th>                                            
+								<th>Tax</th>
 								<th>Discount</th>
 								<th>Total</th>
 							</tr>

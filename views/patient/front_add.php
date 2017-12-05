@@ -65,7 +65,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="row clearfix">                            
+				<div class="row clearfix">
 					<div class="col-sm-3 col-xs-12">
 						<div class="form-group">
 							<div class="form-line">
@@ -88,7 +88,7 @@
 								<option value="20">Female</option>
 							</select>
 						</div>
-					</div>                            
+					</div>
 					<div class="col-sm-3 col-xs-12">
 						<div class="form-group">
 							<div class="form-line">
@@ -110,7 +110,7 @@
 						</form>
 					</div>
 				</div>
-				<div class="row clearfix">                            
+				<div class="row clearfix">
 					<div class="col-sm-12">
 						<div class="form-group">
 							<div class="form-line">
@@ -168,12 +168,12 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-6 col-xs-12">                               
+					<div class="col-sm-6 col-xs-12">
 						<div class="form-group">
 							<div class="form-line">
 								<input type="text" class="datetimepicker form-control" placeholder="Please choose date & time...">
 							</div>
-						</div>                               
+						</div>
 					</div>
 					<div class="col-sm-12">
 						<button type="submit" class="btn btn-raised g-bg-cyan">Submit</button>

@@ -23,7 +23,7 @@
 	<div class="col-lg-12 col-md-12 col-sm-12">
 		<div class="card">
 			<div class="header">
-				<h2> CSS ANIMATIONS <small>Pure css animations - <a href="https://daneden.github.io/animate.css/" target="_blank">daneden.github.io/animate.css</a></small> </h2>                        
+				<h2> CSS ANIMATIONS <small>Pure css animations - <a href="https://daneden.github.io/animate.css/" target="_blank">daneden.github.io/animate.css</a></small> </h2>
 			</div>
 			<div class="body"> <img src="<?php echo Yii::app()->theme->baseUrl;?>/images/preview/animation-bg.jpg" class="js-animating-object img-fluid" />
 				<div class="demo-image-copyright"> This image taken from <a href="https://unsplash.com" target="_blank">Unsplash</a> </div>

@@ -40,7 +40,7 @@
 					<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#profile">PROFILE</a></li>
 					<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#messages">MESSAGES</a></li>
 					<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#settings">SETTINGS</a></li>
-				</ul>                        
+				</ul>
 				<?php //begin.Tab panes ?>
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane in active" id="home"> <b>Home Content</b>
@@ -88,7 +88,7 @@
 					<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#profile_only_icon_title"><i class="material-icons">person</i></a></li>
 					<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#messages_only_icon_title"><i class="material-icons">email</i></a></li>
 					<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#settings_only_icon_title"><i class="material-icons">settings</i></a></li>
-				</ul>                        
+				</ul>
 				<?php //begin.Tab panes ?>
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane in active" id="home_only_icon_title"> <b>Home Content</b>

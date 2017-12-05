@@ -71,7 +71,7 @@
 			<div class="header">
 				<h2>Alert Links
 					<small>Add the <code>.alert-link</code> class to any links inside the alert box to create "matching colored links"</small>
-				</h2>                            
+				</h2>
 			</div>
 			<div class="body">
 				<div class="alert alert-success">

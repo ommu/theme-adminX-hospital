@@ -32,7 +32,7 @@
 					</li>
 				</ul>
 			</div>
-			<div class="body">                            
+			<div class="body">
 				<div class="row clearfix">
 					<div class=" col-sm-12 col-md-6 col-lg-3">
 						<button class="btn bg-green btn-lg btn-block waves-effect" type="button">GREEN <span class="badge">2</span></button>

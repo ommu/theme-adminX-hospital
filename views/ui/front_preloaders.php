@@ -22,7 +22,7 @@
 	<div class="col-lg-12 col-md-12 col-sm-12">
 		<div class="card">
 			<div class="header">
-				<h2> PRELOADERS - DIFFERENT SIZES </h2>                        
+				<h2> PRELOADERS - DIFFERENT SIZES </h2>
 			</div>
 			<div class="body">
 				<div class="demo-preloader">
@@ -88,7 +88,7 @@
 	<div class="col-lg-12 col-md-12 col-sm-12">
 		<div class="card">
 			<div class="header">
-				<h2> WITH MATERIAL DESIGN COLORS <small>You can use the material design colors which examples are <code>.pl-red, .pl-pink</code> class.</small> </h2>                       
+				<h2> WITH MATERIAL DESIGN COLORS <small>You can use the material design colors which examples are <code>.pl-red, .pl-pink</code> class.</small> </h2>
 			</div>
 			<div class="body">
 				<div class="demo-preloader">

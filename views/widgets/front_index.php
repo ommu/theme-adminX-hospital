@@ -204,7 +204,7 @@
 			</div>
 		</div>
 	</div>
-</div>        
+</div>
 <div class="row clearfix">
 	<div class="col-lg-3 col-md-6 col-sm-12">
 		<div class="card">
@@ -249,7 +249,7 @@
 				</div>
 			</div>
 		</div>
-	</div>            
+	</div>
 </div>
 <div class="row clearfix">
 	<div class="col-lg-4 col-md-6 col-sm-12 ">
@@ -394,7 +394,7 @@
 			</div>
 		</div>
 	</div>
-</div>        
+</div>
 <div class="row clearfix">
 	<div class="col-lg-3 col-md-6 col-sm-12">
 		<div class="card info-box-3 bg-light-green hover-expand-effect">

@@ -151,11 +151,11 @@
 		<?php if(Yii::app()->user->level == 1) {?>
 			<li <?php echo $currentAction == 'settings/general' ? 'class="active"' : '';?>><a href="<?php echo Yii::app()->createUrl('settings/general');?>" title="<?php echo Yii::t('phrase', 'General Settings');?>"><?php echo Yii::t('phrase', 'General Settings');?></a></li>
 			<?php if($setting->site_type == 1) {?>
-				<li <?php echo $currentAction == 'settings/banned' ? 'class="active"' : '';?>><a href="<?php echo Yii::app()->createUrl('settings/banned');?>" title="<?php echo Yii::t('phrase', 'Spam & Banning Tools');?>"><?php echo Yii::t('phrase', 'Spam & Banning Tools');?></a></li>				
+				<li <?php echo $currentAction == 'settings/banned' ? 'class="active"' : '';?>><a href="<?php echo Yii::app()->createUrl('settings/banned');?>" title="<?php echo Yii::t('phrase', 'Spam & Banning Tools');?>"><?php echo Yii::t('phrase', 'Spam & Banning Tools');?></a></li>
 			<?php }?>
 			<li <?php echo $currentAction == 'settings/signup' ? 'class="active"' : '';?>><a href="<?php echo Yii::app()->createUrl('settings/signup');?>" title="<?php echo Yii::t('phrase', 'Signup Settings');?>"><?php echo Yii::t('phrase', 'Signup Settings');?></a></li>
 			<li <?php echo $controller == 'meta' ? 'class="active"' : '';?>><a href="<?php echo Yii::app()->createUrl('meta/edit');?>" title="<?php echo Yii::t('phrase', 'Meta Settings');?>"><?php echo Yii::t('phrase', 'Meta Settings');?></a></li>
-			<li <?php echo $currentAction == 'settings/analytic' ? 'class="active"' : '';?>><a href="<?php echo Yii::app()->createUrl('settings/analytic');?>" title="<?php echo Yii::t('phrase', 'Google Analytics Settings');?>"><?php echo Yii::t('phrase', 'Google Analytics Settings');?></a></li>	
+			<li <?php echo $currentAction == 'settings/analytic' ? 'class="active"' : '';?>><a href="<?php echo Yii::app()->createUrl('settings/analytic');?>" title="<?php echo Yii::t('phrase', 'Google Analytics Settings');?>"><?php echo Yii::t('phrase', 'Google Analytics Settings');?></a></li>
 			<li <?php echo in_array($controller, array('language')) ? 'class="active"' : '';?>><a href="<?php echo Yii::app()->createUrl('language/manage');?>" title="<?php echo Yii::t('phrase', 'Language Settings');?>"><?php echo Yii::t('phrase', 'Language Settings');?></a></li>
 			<li <?php echo $currentAction == 'settings/locale' || in_array($controller, array('zonecountry','zoneprovince','zonecity','zonedistrict','zonevillage')) ? 'class="submenu-show"' : '';?>>
 				<a <?php echo $currentAction == 'settings/locale' ? 'class="menu-toggle active"' : 'class="menu-toggle"';?> href="<?php echo Yii::app()->createUrl('settings/locale');?>" title="<?php echo Yii::t('phrase', 'Locale Settings');?>"><?php echo Yii::t('phrase', 'Locale Settings');?></a>

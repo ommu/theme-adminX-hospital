@@ -42,7 +42,7 @@
 	<div class="col-lg-12 col-md-12 col-sm-12">
 		<div class="card">
 			<div class="header">
-				<h2> CONTEXTUAL ALTERNATIVES <small>Progress bars use some of the same button and alert classes for consistent styles.</small> </h2>                        
+				<h2> CONTEXTUAL ALTERNATIVES <small>Progress bars use some of the same button and alert classes for consistent styles.</small> </h2>
 			</div>
 			<div class="body">
 				<div class="progress m-b-10">

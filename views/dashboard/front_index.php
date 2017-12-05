@@ -62,7 +62,7 @@
 	</div>
 </div>
 <div class="row clearfix">
-	<div class="col-sm-12 col-md-12 col-lg-8 col-xl-9">				
+	<div class="col-sm-12 col-md-12 col-lg-8 col-xl-9">
 		<div class="card product-report">
 			<div class="header">
 				<h2>Hospital Annual Report</h2>
@@ -153,7 +153,7 @@
 							<div class="text-muted-dk">10:30</div>
 							<p>Call to customer <a href="" class="text-info">Jacob</a> and discuss the detail.</p>
 						</div>
-					</div>							
+					</div>
 				</div>
 			</div>
 		</div>
@@ -199,7 +199,7 @@
 				<p class="m-b-0 p-t-10 text-center">Growth Rate 46.43%</p>
 			</div>
 		</div>
-	</div>					
+	</div>
 </div>
 <div class="row clearfix">
 	<div class="col-md-12 col-lg-12">
@@ -209,7 +209,7 @@
 				<small>Hospital</small>
 			</div>
 			<div class="body">
-				<div class="row">							
+				<div class="row">
 					<div class="col-md-12 col-sm-12 col-lg-8 col-xl-9">
 						<div id="world-map-markers" class="jvector-map"></div>
 					</div>
@@ -224,36 +224,36 @@
 						<div class="table-responsive">
 							<table class="table table-hover">
 								<tbody>
-									<tr>											
+									<tr>
 										<td>USA</td>
 										<td>$2,009</td>
 										<td class="text-muted">4.22%</td>
 										<td class="text-danger">-0.01%</td>
 									</tr>
-									<tr>											
+									<tr>
 										<td>Germany</td>
 										<td>$3,526</td>
 										<td class="text-muted">4.17%</td>
 										<td class="text-success">+0.06%</td>
-									</tr>										
-									<tr>											
+									</tr>
+									<tr>
 										<td>Australia</td>
 										<td>$2,357</td>
 										<td class="text-muted">3.15%</td>
 										<td class="text-danger">-0.12%</td>
 									</tr>
-									<tr>											
+									<tr>
 										<td>Canada</td>
 										<td>$3,129</td>
 										<td class="text-muted">4.01%</td>
 										<td class="text-success">+0.07%</td>
 										</tr>
-									<tr>											
+									<tr>
 										<td>France</td>
 										<td>$2,143</td>
 										<td class="text-muted">2.80%</td>
 										<td class="text-success">+0.06%</td>
-									</tr>											
+									</tr>
 								</tbody>
 							</table>
 						</div>
@@ -273,7 +273,7 @@
 					<h3>New York</h3>
 					<img src="<?php echo Yii::app()->theme->baseUrl;?>/images/weather/summer.svg" alt="">
 				</div>
-				<ul class="row days list-unstyled">											
+				<ul class="row days list-unstyled">
 					<li>
 						<h5>SUN</h5>
 						<img src="<?php echo Yii::app()->theme->baseUrl;?>/images/weather/sky.svg" alt="">
@@ -309,7 +309,7 @@
 						<img src="<?php echo Yii::app()->theme->baseUrl;?>/images/weather/cloudy.svg" alt="">
 						<span class="degrees">81</span>
 					</li>
-				</ul>						
+				</ul>
 			</div>
 		</div>
 	</div>
@@ -400,7 +400,7 @@
 				<div class="table-responsive">
 					<table class="table table-hover">
 						<thead>
-							<tr>                                       
+							<tr>
 								<th>Media</th>
 								<th>Patients ID</th>
 								<th>Name</th>
