@@ -157,7 +157,7 @@
 			<li <?php echo $controller == 'meta' ? 'class="active"' : '';?>><a href="<?php echo Yii::app()->createUrl('meta/edit');?>" title="<?php echo Yii::t('phrase', 'Meta Settings');?>"><?php echo Yii::t('phrase', 'Meta Settings');?></a></li>
 			<li <?php echo $currentAction == 'settings/analytic' ? 'class="active"' : '';?>><a href="<?php echo Yii::app()->createUrl('settings/analytic');?>" title="<?php echo Yii::t('phrase', 'Google Analytics Settings');?>"><?php echo Yii::t('phrase', 'Google Analytics Settings');?></a></li>
 			<li <?php echo in_array($controller, array('language')) ? 'class="active"' : '';?>><a href="<?php echo Yii::app()->createUrl('language/manage');?>" title="<?php echo Yii::t('phrase', 'Language Settings');?>"><?php echo Yii::t('phrase', 'Language Settings');?></a></li>
-			<li <?php echo $currentAction == 'settings/locale' || in_array($controller, array('zonecountry','zoneprovince','zonecity','zonedistrict','zonevillage')) ? 'class="submenu-show"' : '';?>>
+			<li <?php echo $currentAction == 'settings/locale' || in_array($controller, array('zonecountry','zoneprovince','zonecity','zonedistrict','zonevillage')) ? 'class="active"' : '';?>>
 				<a <?php echo $currentAction == 'settings/locale' ? 'class="menu-toggle active"' : 'class="menu-toggle"';?> href="<?php echo Yii::app()->createUrl('settings/locale');?>" title="<?php echo Yii::t('phrase', 'Locale Settings');?>"><?php echo Yii::t('phrase', 'Locale Settings');?></a>
 				<ul class="ml-menu">
 					<li <?php echo $controller == 'zonecountry' ? 'class="active"' : '';?>><a href="<?php echo Yii::app()->createUrl('zonecountry/manage');?>" title="<?php echo Yii::t('phrase', 'Country');?>"><?php echo Yii::t('phrase', 'Country');?></a></li>
@@ -167,10 +167,10 @@
 					<li <?php echo $controller == 'zonevillage' ? 'class="active"' : '';?>><a href="<?php echo Yii::app()->createUrl('zonevillage/manage');?>" title="<?php echo Yii::t('phrase', 'Village');?>"><?php echo Yii::t('phrase', 'Village');?></a></li>
 				</ul>
 			</li>
-			<li <?php echo $controller == 'o/mailsetting' ? 'class="submenu-show"' : '';?>>
+			<li <?php echo $controller == 'o/mailsetting' ? 'class="active"' : '';?>>
 				<a <?php echo $controller == 'o/mailsetting' ? 'class="active"' : '';?> href="<?php echo Yii::app()->createUrl('support/o/mailsetting/edit');?>" title="<?php echo Yii::t('phrase', 'Mail Settings');?>"><?php echo Yii::t('phrase', 'Mail Settings');?></a>
 			</li>
-			<li <?php echo in_array($controller, array('o/contact','o/contactcategory','o/widget')) ? 'class="submenu-show"' : '';?>>
+			<li <?php echo in_array($controller, array('o/contact','o/contactcategory','o/widget')) ? 'class="active"' : '';?>>
 				<a class="menu-toggle" href="javascript:void(0);" title="<?php echo Yii::t('phrase', 'Contact Settings');?>"><?php echo Yii::t('phrase', 'Contact Settings');?></a>
 				<ul class="ml-menu">
 					<li <?php echo $controller == 'o/contact' && $action != 'setting' ? 'class="active"' : '';?>><a href="<?php echo Yii::app()->createUrl('support/o/contact/manage');?>" title="<?php echo Yii::t('phrase', 'Manage Contact');?>"><?php echo Yii::t('phrase', 'Manage Contact');?></a></li>
@@ -179,7 +179,7 @@
 					<li <?php echo $controller == 'o/widget' ? 'class="active"' : '';?>><a href="<?php echo Yii::app()->createUrl('support/o/widget/manage');?>" title="<?php echo Yii::t('phrase', 'Social Media Widget');?>"><?php echo Yii::t('phrase', 'SosMed Widget');?></a></li>
 				</ul>
 			</li>
-			<li <?php echo in_array($controller, array('o/setting','o/category')) ? 'class="submenu-show"' : '';?>>
+			<li <?php echo in_array($controller, array('o/setting','o/category')) ? 'class="active"' : '';?>>
 				<a class="menu-toggle" href="javascript:void(0);" title="<?php echo Yii::t('phrase', 'Report Settings');?>"><?php echo Yii::t('phrase', 'Report Settings');?></a>
 				<ul class="ml-menu">
 					<li <?php echo $controller == 'o/setting' ? 'class="active"' : '';?>><a href="<?php echo Yii::app()->createUrl('report/o/setting/edit');?>" title="<?php echo Yii::t('phrase', 'Report Settings');?>"><?php echo Yii::t('phrase', 'Report Settings');?></a></li>

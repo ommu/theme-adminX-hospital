@@ -5,6 +5,11 @@ layout			: main
 thumbnail		: adminx_hospital.png
 author			: Putra Sudaryanto
 
+preview_menu	:
+	database: 1
+	backoffice: 1
+	theme: 1
+
 theme_menu		:
 	- Theme Menus
 

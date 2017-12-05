@@ -17,18 +17,14 @@ class SidebarMenuFromTheme extends CWidget
 		$currentModule = strtolower(Yii::app()->controller->module->id.'/'.Yii::app()->controller->id);
 		$currentModuleAction = strtolower(Yii::app()->controller->module->id.'/'.Yii::app()->controller->id.'/'.Yii::app()->controller->action->id);
 
-		$theme = Yii::app()->theme->name;
-		$themePath = Yii::getPathOfAlias('webroot.themes.'.$theme).DS.$theme.'.yaml';
-		$themeYML = Spyc::YAMLLoad($themePath);
-		$themeMenu = $themeYML['theme_menu'];
-
 		$setting = OmmuSettings::model()->findByPk(1,array(
 			'select' => 'site_type'
 		));
+		$themeMenu = Utility::getThemeInfo(Yii::app()->theme->name, 'theme_menu');
 
 		$this->render('sidebar_menu_from_theme',array(
-			'themeMenu'=>$themeMenu,
 			'setting'=>$setting,
+			'themeMenu'=>$themeMenu,
 			'module'=>$module,
 			'controller'=>$controller,
 			'action'=>$action,

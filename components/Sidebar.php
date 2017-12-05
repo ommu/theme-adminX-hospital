@@ -16,7 +16,10 @@ class Sidebar extends CWidget
 		$currentModule = strtolower(Yii::app()->controller->module->id.'/'.Yii::app()->controller->id);
 		$currentModuleAction = strtolower(Yii::app()->controller->module->id.'/'.Yii::app()->controller->id.'/'.Yii::app()->controller->action->id);
 
+		$themeMenuPreview = Utility::getThemeInfo(Yii::app()->theme->name, 'preview_menu');
+
 		$this->render('sidebar',array(
+			'themeMenuPreview'=>$themeMenuPreview,
 			'module'=>$module,
 			'controller'=>$controller,
 			'action'=>$action,
