@@ -26,6 +26,6 @@ class Sidebar extends CWidget
 			'currentAction'=>$currentAction,
 			'currentModule'=>$currentModule,
 			'currentModuleAction'=>$currentModuleAction,
-		));	
+		));
 	}
 }

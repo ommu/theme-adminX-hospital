@@ -77,17 +77,23 @@ class SidebarMenuFromTheme extends CWidget
 						}
 	
 						$liClass = '';
-						if($val['urlPath']['url'] != null && $val['urlPath']['url'] != '-' || $submenu != null) {
-							if($sub == false) {
-								if($submenu == null)
-									$liClass = $currentAction == $val['urlPath']['url'] ? 'class="active open"' : '';
-								else {
-									$urlArray = explode('/', $submenu[0]['urlPath']['url']);
-									$liClass = $controller == $urlArray[0] ? 'class="active open"' : '';
-								}
-							} else 
-								$liClass = $currentAction == $val['urlPath']['url'] ? 'class="active"' : '';
+						$controllerArray = explode('/', $controller);
+						$controllerVaribale = array();
+						if($val['urlPath']['url'] != null && $val['urlPath']['url'] != '-') {
+							$urlArray = explode('/', $val['urlPath']['url']);
+							array_pop($urlArray);
+							$controllerVaribale[] = implode('/', $urlArray);
 						}
+						if($submenu != null)
+							$controllerVaribale = array_merge($controllerVaribale, $this->getControllerVaribale($submenu));
+						if($sub == false) {
+							if($submenu == null)
+								$liClass = $currentAction == $val['urlPath']['url'] ? 'class="active open"' : '';
+							else
+								$liClass = in_array($controller, $controllerVaribale) ? 'class="active open"' : '';
+						} else 
+							$liClass = $currentAction == $val['urlPath']['url'] ? 'class="active"' : '';
+							
 						$icon = $sub == false ? ($val['urlPath']['icon'] != null && $val['urlPath']['icon'] != '-' ? CHtml::tag('i', array('class'=>$val['urlPath']['icon']), '') : CHtml::tag('i', array('class'=>'zmdi zmdi-home'), '')) : '';
 						$menu = $sub == false ? CHtml::tag('span', array(), Yii::t('phrase', $val['urlTitle'])) : Yii::t('phrase', $val['urlTitle']);
 						$url = $val['urlPath']['url'] != null && $val['urlPath']['url'] != '-' ? Yii::app()->createUrl($val['urlPath']['url'], $arrAttrParams) : 'javascript:void(0);';
@@ -105,5 +111,18 @@ class SidebarMenuFromTheme extends CWidget
 				}
 			}
 		}
+	}
+
+	public function getControllerVaribale($submenu)
+	{
+		$controllerVaribale = array();
+
+		foreach($submenu as $key => $val) {
+			$urlArray = explode('/', $val['urlPath']['url']);
+			array_pop($urlArray);
+			$controllerVaribale[] = implode('/', $urlArray);
+		}
+
+		return $controllerVaribale;
 	}
 }

@@ -6,7 +6,9 @@ thumbnail		: adminx_hospital.png
 author			: Putra Sudaryanto
 
 preview_menu	:
-	database: 1
+	database:
+		status: 1
+		category: 'backoffice'
 	backoffice: 1
 	theme: 1
 
