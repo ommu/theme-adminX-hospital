@@ -74,6 +74,8 @@
 					)); 
 				?>
 			</ol>
+			<?php echo $this->pageDescription && strtolower($this->pageDescription) != strtolower(OmmuSettings::getInfo('site_description')) ? '<p class="intro">'.$this->pageDescription.'</p>' : '';?>
+			<?php $this->widget('MenuContent', array('menus'=>$this->menu)); // Menu Content ?>
 		</div>
 		<?php }?>
 
