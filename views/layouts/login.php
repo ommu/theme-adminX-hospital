@@ -1,10 +1,10 @@
 <?php 
 /**
  * @author Putra Sudaryanto <putra@sudaryanto.id>
+ * @contact (+62)856-299-4114
  * @copyright Copyright (c) 2017 Ommu Platform (opensource.ommu.co)
  * @created date 28 November 2017, 14:48 WIB
  * @link https://github.com/OmmuThemes/adminX-hospital
- * @contact (+62)856-299-4114
  *
  */
 

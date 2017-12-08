@@ -1,4 +1,15 @@
 <?php
+/**
+ * @var $this SidebarMenuBackoffice
+ * version: 0.0.1
+ *
+ * @author Putra Sudaryanto <putra@sudaryanto.id>
+ * @contact (+62)856-299-4114
+ * @copyright Copyright (c) 2017 Ommu Platform (opensource.ommu.co)
+ * @link https://github.com/OmmuThemes/adminX-hospital
+ *
+ */
+
 	$menuRender = 0;
 	if(($module == null && in_array($controller, array('admin'))) || ($module != null && (($module == 'report' && !in_array($controller, array('o/category','o/setting'))) || ($module == 'support' && !in_array($controller, array('o/contact','o/contactcategory','o/mailsetting','o/widget'))) || ($module == 'telegrambot')))) {
 		$menuRender = 1;

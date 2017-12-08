@@ -3,12 +3,12 @@
  * Ommu Settings (ommu-settings)
  * @var $this ComingsoonController
  * @var $model OmmuSettings
- * version: 1.3.0
+ * version: 0.0.1
  *
  * @author Putra Sudaryanto <putra@sudaryanto.id>
- * @copyright Copyright (c) 2012 Ommu Platform (opensource.ommu.co)
- * @link https://github.com/ommu/core
  * @contact (+62)856-299-4114
+ * @copyright Copyright (c) 2017 Ommu Platform (opensource.ommu.co)
+ * @link https://github.com/OmmuThemes/adminX-hospital
  *
  */
  

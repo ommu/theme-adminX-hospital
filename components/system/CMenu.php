@@ -1,7 +1,6 @@
 <?php
 /**
  * CMenu class file.
- * version: 1.3.0
  *
  * @author Jonah Turnquist <poppitypop@gmail.com>
  * @author Qiang Xue <qiang.xue@gmail.com>
@@ -9,8 +8,12 @@
  * @copyright 2008-2013 Yii Software LLC
  * @license http://www.yiiframework.com/license/
  * 
+ * version: 0.0.1
+ * 
  * @modify Putra Sudaryanto <putra@sudaryanto.id>
  * @contact (+62)856-299-4114
+ * @copyright Copyright (c) 2017 Ommu Platform (opensource.ommu.co)
+ * @link https://github.com/OmmuThemes/adminX-hospital
  *
  */
 
