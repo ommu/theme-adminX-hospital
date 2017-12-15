@@ -154,6 +154,8 @@ class CMenu extends CWidget
 	 */
 	public $itemCssClass;
 
+	public $icons;
+
 	/**
 	 * Initializes the menu widget.
 	 * This method mainly normalizes the {@link items} property.
@@ -252,11 +254,15 @@ class CMenu extends CWidget
 	 */
 	protected function renderMenuItem($item)
 	{
+		$icons = 'zmdi zmdi-home';
+		if($this->icons)
+			$icons = $this->icons;
+
 		if(isset($item['url']))
 		{
 			$label=$this->linkLabelWrapper===null ? $item['label'] : CHtml::tag($this->linkLabelWrapper, $this->linkLabelWrapperHtmlOptions, $item['label']);
 			$url = $item['url'][0] == 'javascript:void(0);' ? 'javascript:void(0);' : $item['url'];
-			return CHtml::link('<span class="icons">C</span>'.$label,$url,isset($item['linkOptions']) ? $item['linkOptions'] : array());
+			return CHtml::link('<i class="'.$icons.'"></i>'.$label,$url,isset($item['linkOptions']) ? $item['linkOptions'] : array());
 		}
 		else
 			return CHtml::tag('span',isset($item['linkOptions']) ? $item['linkOptions'] : array(), $item['label']);

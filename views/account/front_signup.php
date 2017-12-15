@@ -26,7 +26,7 @@
 			'validateOnSubmit'=>true,
 		),
 		'htmlOptions'=>array(
-			'class'=>'col-md-12',
+			'class'=>'col-md-12 admin-x',
 		),
 	)); ?>
 		<div class="form-group form-float">

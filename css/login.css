@@ -293,13 +293,3 @@
 		opacity: 0;
 	}
 }
-
-.form-group .errorMessage {
-	margin-top: 5px;
-	font-size: 13px;
-	color: #ff0000;
-}
-form .form-group {
-	margin-top: 20px;
-	padding-bottom: 0;
-}
