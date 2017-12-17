@@ -7,10 +7,10 @@ author			: Putra Sudaryanto
 
 preview_menu	:
 	database:
-		status: 1
+		status: 0
 		category: 'backoffice'
 	backoffice: 1
-	theme: 1
+	theme: 0
 
 theme_menu		:
 	- Theme Menus
