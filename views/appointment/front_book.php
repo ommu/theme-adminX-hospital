@@ -33,84 +33,86 @@
 				</ul>
 			</div>
 			<div class="body">
-				<div class="row clearfix">
-					<div class="col-sm-6 col-xs-12">
-						<div class="form-group">
-							<div class="form-line">
-								<input type="text" class="form-control" placeholder="First Name">
+				<form class="admin-x">
+					<div class="row clearfix">
+						<div class="col-sm-6 col-xs-12">
+							<div class="form-group">
+								<div class="form-line">
+									<input type="text" class="form-control" placeholder="First Name">
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-xs-12">
+							<div class="form-group">
+								<div class="form-line">
+									<input type="text" class="form-control" placeholder="Last Name">
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-6 col-xs-12">
-						<div class="form-group">
-							<div class="form-line">
-								<input type="text" class="form-control" placeholder="Last Name">
+					<div class="row clearfix">
+						<div class="col-sm-3 col-xs-12">
+							<div class="form-group">
+								<div class="form-line">
+									<input type="text" class="datepicker form-control" placeholder="Date of Birth">
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3 col-xs-12">
+							<div class="form-group drop-custum">
+								<select class="form-control show-tick">
+									<option value="">-- Gender --</option>
+									<option value="10">Male</option>
+									<option value="20">Female</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-sm-3 col-xs-12">
+							<div class="form-group drop-custum">
+								<select class="form-control show-tick">
+									<option value="">-- Service --</option>
+									<option>Select Service</option>
+									<option>Dental Checkup</option>
+									<option>Full Body Checkup</option>
+									<option>ENT Checkup</option>
+									<option>Heart Checkup</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-sm-3 col-xs-12">
+							<div class="form-group">
+								<div class="form-line">
+									<input type="text" class="datetimepicker form-control" placeholder="Please choose date & time...">
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="row clearfix">
-					<div class="col-sm-3 col-xs-12">
-						<div class="form-group">
-							<div class="form-line">
-								<input type="text" class="datepicker form-control" placeholder="Date of Birth">
+					<div class="row clearfix">
+						<div class="col-sm-12">
+							<div class="form-group">
+								<div class="form-line">
+									<input type="text" class="form-control" placeholder="Enter Your Email">
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-sm-3 col-xs-12">
-						<div class="form-group drop-custum">
-							<select class="form-control show-tick">
-								<option value="">-- Gender --</option>
-								<option value="10">Male</option>
-								<option value="20">Female</option>
-							</select>
-						</div>
-					</div>
-					<div class="col-sm-3 col-xs-12">
-						<div class="form-group drop-custum">
-							<select class="form-control show-tick">
-								<option value="">-- Service --</option>
-								<option>Select Service</option>
-								<option>Dental Checkup</option>
-								<option>Full Body Checkup</option>
-								<option>ENT Checkup</option>
-								<option>Heart Checkup</option>
-							</select>
-						</div>
-					</div>
-					<div class="col-sm-3 col-xs-12">
-						<div class="form-group">
-							<div class="form-line">
-								<input type="text" class="datetimepicker form-control" placeholder="Please choose date & time...">
+						<div class="col-sm-12">
+							<div class="form-group">
+								<div class="form-line">
+									<input type="text" class="form-control" placeholder="Phone">
+								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-				<div class="row clearfix">
-					<div class="col-sm-12">
-						<div class="form-group">
-							<div class="form-line">
-								<input type="text" class="form-control" placeholder="Enter Your Email">
+						<div class="col-sm-12">
+							<div class="form-group">
+								<div class="form-line">
+									<textarea rows="4" class="form-control no-resize" placeholder="Please type what you want..."></textarea>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-sm-12">
-						<div class="form-group">
-							<div class="form-line">
-								<input type="text" class="form-control" placeholder="Phone">
-							</div>
+						<div class="col-sm-12">
+							<button type="submit" class="btn btn-raised g-bg-cyan">Submit</button>
+							<button type="submit" class="btn btn-raised">Cancel</button>
 						</div>
-					</div>
-					<div class="col-sm-12">
-						<div class="form-group">
-							<div class="form-line">
-								<textarea rows="4" class="form-control no-resize" placeholder="Please type what you want..."></textarea>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-12">
-						<button type="submit" class="btn btn-raised g-bg-cyan">Submit</button>
-						<button type="submit" class="btn btn-raised">Cancel</button>
 					</div>
 				</div>
 			</div>

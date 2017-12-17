@@ -20,7 +20,7 @@
 	$this->pageDescription = CHtml::encode($message);
 ?>
 
-<form class="col-md-12" id="sign_in" method="POST">
+<form class="col-md-12 admin-x" id="sign_in" method="POST">
 	<div class="form-group form-float">
 		<div class="form-line">
 			<input type="text" class="form-control">

@@ -40,77 +40,79 @@
 				</ul>
 			</div>
 			<div class="body">
-				<div class="row clearfix">
-					<div class="col-sm-12 col-lg-6">
-						<div class="form-group">
-							<div class="form-line">
-								<input type="number" class="form-control" placeholder="Payment Number">
+				<div class="clearfix">
+					<form class="admin-x col-lg-12 row">
+						<div class="col-sm-12 col-lg-6">
+							<div class="form-group">
+								<div class="form-line">
+									<input type="number" class="form-control" placeholder="Payment Number">
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-sm-12 col-lg-6">
-						<div class="form-group">
-							<div class="form-line">
-								<input type="text" class="form-control" placeholder="Patient Name">
+						<div class="col-sm-12 col-lg-6">
+							<div class="form-group">
+								<div class="form-line">
+									<input type="text" class="form-control" placeholder="Patient Name">
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-sm-12 ">
-						<div class="form-group">
-							<div class="form-line">
-								<input type="text" class="form-control" placeholder="Doctor Name">
+						<div class="col-sm-12 ">
+							<div class="form-group">
+								<div class="form-line">
+									<input type="text" class="form-control" placeholder="Doctor Name">
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-sm-12 ">
-						<div class="form-group">
-							<div class="form-line">
-								<input type="text" class="datepicker form-control" placeholder="Payment Date">
+						<div class="col-sm-12 ">
+							<div class="form-group">
+								<div class="form-line">
+									<input type="text" class="datepicker form-control" placeholder="Payment Date">
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-sm-12 ">
-						<div class="form-group">
-							<div class="form-line">
-								<input type="number" class="form-control" placeholder="Total Amount">
+						<div class="col-sm-12 ">
+							<div class="form-group">
+								<div class="form-line">
+									<input type="number" class="form-control" placeholder="Total Amount">
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-sm-12 ">
-						<div class="form-group">
-							<div class="form-line">
-								<input type="number" class="form-control" placeholder="Discount">
+						<div class="col-sm-12 ">
+							<div class="form-group">
+								<div class="form-line">
+									<input type="number" class="form-control" placeholder="Discount">
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-sm-12 ">
-						<div class="form-group drop-custum">
-							<select class="form-control show-tick">
-								<option value="">-- Payment Method --</option>
-								<option>Cash</option>
-								<option>Cheque</option>
-								<option>Credit Card</option>
-								<option>Debit Card</option>
-								<option>Netbanking</option>
-								<option>Insurance</option>
-							</select>
+						<div class="col-sm-12 ">
+							<div class="form-group drop-custum">
+								<select class="form-control show-tick">
+									<option value="">-- Payment Method --</option>
+									<option>Cash</option>
+									<option>Cheque</option>
+									<option>Credit Card</option>
+									<option>Debit Card</option>
+									<option>Netbanking</option>
+									<option>Insurance</option>
+								</select>
+							</div>
 						</div>
-					</div>
-					<div class="col-sm-12 ">
-						<div class="form-group drop-custum">
-							<select class="form-control show-tick">
-								<option value="">-- Payment Status --</option>
-								<option>Select Status</option>
-								<option>Complete</option>
-								<option>Pending</option>
-								<option>Partial</option>
-							</select>
+						<div class="col-sm-12 ">
+							<div class="form-group drop-custum">
+								<select class="form-control show-tick">
+									<option value="">-- Payment Status --</option>
+									<option>Select Status</option>
+									<option>Complete</option>
+									<option>Pending</option>
+									<option>Partial</option>
+								</select>
+							</div>
 						</div>
-					</div>
-					<div class="col-sm-12">
-						<button type="submit" class="btn btn-raised g-bg-cyan">Submit</button>
-						<button type="submit" class="btn btn-raised">Cancel</button>
-					</div>
+						<div class="col-sm-12">
+							<button type="submit" class="btn btn-raised g-bg-cyan">Submit</button>
+							<button type="submit" class="btn btn-raised">Cancel</button>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>

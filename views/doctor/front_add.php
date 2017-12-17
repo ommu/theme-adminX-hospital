@@ -37,90 +37,93 @@
 				</ul>
 			</div>
 			<div class="body">
-				<div class="row clearfix">
-					<div class="col-sm-6 col-xs-12">
-						<div class="form-group">
-							<div class="form-line">
-								<input type="text" class="form-control" placeholder="First Name">
+				<form class="admin-x">
+					<div class="row clearfix">
+						<div class="col-sm-6 col-xs-12">
+							<div class="form-group">
+								<div class="form-line">
+									<input type="text" class="form-control" placeholder="First Name">
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-xs-12">
+							<div class="form-group">
+								<div class="form-line">
+									<input type="text" class="form-control" placeholder="Last Name">
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-6 col-xs-12">
-						<div class="form-group">
-							<div class="form-line">
-								<input type="text" class="form-control" placeholder="Last Name">
+					<div class="row clearfix">
+						<div class="col-sm-3 col-xs-12">
+							<div class="form-group">
+								<div class="form-line">
+									<input type="text" class="datepicker form-control" placeholder="Date of Birth">
+								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-				<div class="row clearfix">
-					<div class="col-sm-3 col-xs-12">
-						<div class="form-group">
-							<div class="form-line">
-								<input type="text" class="datepicker form-control" placeholder="Date of Birth">
+						<div class="col-sm-3 col-xs-12">
+							<div class="form-group drop-custum">
+								<select class="form-control show-tick">
+									<option value="">-- Gender --</option>
+									<option value="10">Male</option>
+									<option value="20">Female</option>
+								</select>
 							</div>
 						</div>
-					</div>
-					<div class="col-sm-3 col-xs-12">
-						<div class="form-group drop-custum">
-							<select class="form-control show-tick">
-								<option value="">-- Gender --</option>
-								<option value="10">Male</option>
-								<option value="20">Female</option>
-							</select>
-						</div>
-					</div>
-					<div class="col-sm-3 col-xs-12">
-						<div class="form-group">
-							<div class="form-line">
-								<input type="text" class="form-control" placeholder="Speciality">
+						<div class="col-sm-3 col-xs-12">
+							<div class="form-group">
+								<div class="form-line">
+									<input type="text" class="form-control" placeholder="Speciality">
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-sm-3 col-xs-12">
-						<div class="form-group">
-							<div class="form-line">
-								<input type="text" class="form-control" placeholder="Phone">
+						<div class="col-sm-3 col-xs-12">
+							<div class="form-group">
+								<div class="form-line">
+									<input type="text" class="form-control" placeholder="Phone">
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-sm-6 col-xs-12">
-						<div class="form-group">
-							<div class="form-line">
-								<input type="text" class="form-control" placeholder="Enter Your Email">
+						<div class="col-sm-6 col-xs-12">
+							<div class="form-group">
+								<div class="form-line">
+									<input type="text" class="form-control" placeholder="Enter Your Email">
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-sm-6 col-xs-12">
-						<div class="form-group">
-							<div class="form-line">
-								<input type="text" class="form-control" placeholder="Website URL">
+						<div class="col-sm-6 col-xs-12">
+							<div class="form-group">
+								<div class="form-line">
+									<input type="text" class="form-control" placeholder="Website URL">
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<form action="/" id="frmFileUpload" class="dropzone" method="post" enctype="multipart/form-data">
-							<div class="dz-message">
-								<div class="drag-icon-cph"> <i class="material-icons">touch_app</i> </div>
-								<h3>Drop files here or click to upload.</h3>
-								<em>(This is just a demo dropzone. Selected files are <strong>not</strong> actually uploaded.)</em> </div>
-							<div class="fallback">
-								<input name="file" type="file" multiple />
-							</div>
-						</form>
-					</div>
-					<div class="col-sm-12">
-						<div class="form-group">
-							<div class="form-line">
-								<textarea rows="4" class="form-control no-resize" placeholder="Please type what you want..."></textarea>
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div action="/" id="frmFileUpload" class="dropzone" method="post" enctype="multipart/form-data">
+								<div class="dz-message">
+									<div class="drag-icon-cph"> <i class="material-icons">touch_app</i> </div>
+									<h3>Drop files here or click to upload.</h3>
+									<em>(This is just a demo dropzone. Selected files are <strong>not</strong> actually uploaded.)</em>
+								</div>
+								<div class="fallback">
+									<input name="file" type="file" multiple />
+								</div>
 							</div>
 						</div>
+						<div class="col-sm-12">
+							<div class="form-group">
+								<div class="form-line">
+									<textarea rows="4" class="form-control no-resize" placeholder="Please type what you want..."></textarea>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12">
+							<button type="submit" class="btn btn-raised g-bg-cyan">Submit</button>
+							<button type="submit" class="btn btn-raised">Cancel</button>
+						</div>
 					</div>
-					<div class="col-sm-12">
-						<button type="submit" class="btn btn-raised g-bg-cyan">Submit</button>
-						<button type="submit" class="btn btn-raised">Cancel</button>
-					</div>
-				</div>
+				</form>
 			</div>
 		</div>
 	</div>
@@ -142,7 +145,7 @@
 				</ul>
 			</div>
 			<div class="body">
-				<div class="row clearfix">
+				<form class="admin-x row">
 					<div class="col-sm-12 col-xs-12">
 						<div class="form-group">
 							<div class="form-line">
@@ -168,7 +171,7 @@
 						<button type="submit" class="btn btn-raised g-bg-cyan">Submit</button>
 						<button type="submit" class="btn btn-raised">Cancel</button>
 					</div>
-				</div>
+				</form>
 			</div>
 		</div>
 	</div>
@@ -190,7 +193,7 @@
 				</ul>
 			</div>
 			<div class="body">
-				<div class="row clearfix">
+				<form class="admin-x row">
 					<div class="col-sm-4 col-xs-12">
 						<div class="form-group">
 							<div class="form-line">
@@ -237,7 +240,7 @@
 						<button type="submit" class="btn btn-raised g-bg-cyan">Submit</button>
 						<button type="submit" class="btn btn-raised">Cancel</button>
 					</div>
-				</div>
+				</form>
 			</div>
 		</div>
 	</div>

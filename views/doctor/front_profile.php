@@ -146,14 +146,14 @@
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane in active" id="mypost">
 						<div class="wrap-reset">
-							<div class="mypost-form">
+							<form class="admin-x mypost-form">
 								<div class="form-group">
 									<div class="form-line">
 										<textarea rows="4" class="form-control no-resize" placeholder="Please type what you want..."></textarea>
 									</div>
 								</div>
 								<div class="post-toolbar-b"> <a href="#" tooltip="Add File" class="btn btn-raised btn-default btn-sm"><i class="zmdi zmdi-attachment"></i></a> <a href="#" tooltip="Add Image" class="btn btn-raised btn-default btn-sm"><i class="zmdi zmdi-camera"></i></a> <a href="#" class="pull-right btn btn-raised btn-success btn-sm" tooltip="Post it!">Post</a> </div>
-							</div>
+							</form>
 							<div class="mypost-list">
 								<div class="post-box"> <span class="text-muted text-small"><i class="zmdi zmdi-alarm"></i> 3 minutes ago</span>
 									<div class="post-img"><img src="<?php echo Yii::app()->theme->baseUrl;?>/images/preview/puppy-1.jpg" class="img-fluid" alt /></div>
@@ -265,10 +265,10 @@
 						</div>
 					</div>
 					<div role="tabpanel" class="tab-pane" id="usersettings">
-					   <div class="body">
+						<div class="body">
 							<h2 class="card-inside-title">Security Settings</h2>
 							<div class="row clearfix">
-								<div class="col-sm-12">
+								<form class="admin-x col-sm-12">
 									<div class="form-group">
 										<div class="form-line">
 											<input type="text" class="form-control" placeholder="Username">
@@ -285,64 +285,66 @@
 										</div>
 									</div>
 									<button class="btn btn-raised btn-success btn-sm">Save Changes</button>
-								</div>
+								</form>
 							</div>
 							<h2 class="card-inside-title">Account Settings</h2>
-							<div class="row clearfix">
-								<div class="col-md-6 col-xs-12">
-									<div class="form-group">
-										<div class="form-line">
-											<input type="text" class="form-control" placeholder="First Name">
+							<div class="clearfix">
+								<form class="admin-x row">
+									<div class="col-md-6 col-xs-12">
+										<div class="form-group">
+											<div class="form-line">
+												<input type="text" class="form-control" placeholder="First Name">
+											</div>
 										</div>
 									</div>
-								</div>
-								<div class="col-md-6 col-xs-12">
-									<div class="form-group">
-										<div class="form-line">
-											<input type="text" class="form-control" placeholder="Last Name">
+									<div class="col-md-6 col-xs-12">
+										<div class="form-group">
+											<div class="form-line">
+												<input type="text" class="form-control" placeholder="Last Name">
+											</div>
 										</div>
 									</div>
-								</div>
-								<div class="col-sm-12">
-									<div class="form-group">
-										<div class="form-line">
-											<textarea rows="4" class="form-control no-resize" placeholder="Address Line 1"></textarea>
+									<div class="col-sm-12">
+										<div class="form-group">
+											<div class="form-line">
+												<textarea rows="4" class="form-control no-resize" placeholder="Address Line 1"></textarea>
+											</div>
 										</div>
 									</div>
-								</div>
-								<div class="col-md-4 col-xs-12">
-									<div class="form-group">
-										<div class="form-line">
-											<input type="text" class="form-control" placeholder="City">
+									<div class="col-md-4 col-xs-12">
+										<div class="form-group">
+											<div class="form-line">
+												<input type="text" class="form-control" placeholder="City">
+											</div>
 										</div>
 									</div>
-								</div>
-								<div class="col-md-4 col-xs-12">
-									<div class="form-group">
-										<div class="form-line">
-											<input type="text" class="form-control" placeholder="E-mail">
+									<div class="col-md-4 col-xs-12">
+										<div class="form-group">
+											<div class="form-line">
+												<input type="text" class="form-control" placeholder="E-mail">
+											</div>
 										</div>
 									</div>
-								</div>
-								<div class="col-md-4 col-xs-12">
-									<div class="form-group">
-										<div class="form-line">
-											<input type="text" class="form-control" placeholder="Country">
+									<div class="col-md-4 col-xs-12">
+										<div class="form-group">
+											<div class="form-line">
+												<input type="text" class="form-control" placeholder="Country">
+											</div>
 										</div>
 									</div>
-								</div>
-								<div class="col-sm-12">
-									<div class="form-group checkbox">
-										<label>
-											<input name="optionsCheckboxes" type="checkbox">
-											<span class="checkbox-material"><span class="check"></span></span> Profile Visibility For Everyone </label>
+									<div class="col-sm-12">
+										<div class="form-group checkbox">
+											<label>
+												<input name="optionsCheckboxes" type="checkbox">
+												<span class="checkbox-material"><span class="check"></span></span> Profile Visibility For Everyone </label>
+										</div>
 									</div>
-								</div>
-								<div class="col-sm-12">
-									<button class="btn btn-raised btn-success">Save Changes</button>
-								</div>
+									<div class="col-sm-12">
+										<button class="btn btn-raised btn-success">Save Changes</button>
+									</div>
+								</form>
 							</div>
-					   </div>
+						</div>
 					</div>
 				</div>
 			</div>

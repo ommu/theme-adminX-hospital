@@ -1081,7 +1081,7 @@ output {
 	font-size: 14px;
 	line-height: 1.428571429
 }
-.form-control {
+form.admin-x .form-control {
 	height: 36px;
 	padding: 7px 0;
 	font-size: 14px;
@@ -1248,8 +1248,8 @@ output {
 .label.label-danger {
 	background-color: #f44336
 }
-.form-control,
-.form-group .form-control {
+form.admin-x .form-control,
+form.admin-x .form-group .form-control {
 	border: 0;
 	background-size: 0 2px, 100% 1px;
 	background-repeat: no-repeat;
@@ -1372,10 +1372,10 @@ fieldset[disabled] .form-group .form-control {
 .form-group.has-info .help-block {
 	color: #03a9f4
 }
-.form-group textarea {
+form.admin-x .form-group textarea {
 	resize: none
 }
-.form-group textarea ~ .form-control-highlight {
+form.admin-x .form-group textarea ~ .form-control-highlight {
 	margin-top: -11px
 }
 .form-group select {
@@ -1410,13 +1410,23 @@ fieldset[disabled] .form-group .form-control {
 label {
 	font-size: 14px;
 	line-height: 1.428571429;
-	color: #aaa;
 	font-weight: 400
 }
-label.control-label {
+form.admin-x .checkbox label,
+form.admin-x .radio label,
+form.admin-x label,
+label.control-label,
+label.col-form-label {
+	color: #aaa;
+}
+label {
+	margin-bottom: 0;
+}
+form.admin-x label.control-label,
+form.admin-x label.col-form-label {
 	font-size: 11px;
 	line-height: 1.0714285718;
-	color: #aaa;
+	color: #aaa;	
 	font-weight: 400;
 	margin: 16px 0 0 0
 }
@@ -1425,6 +1435,9 @@ label.control-label {
 	font-size: 11px
 }
 .form-group {
+	margin: 10px 0 15px 0;
+}
+form.admin-x .form-group {
 	padding-bottom: 7px;
 	margin: 27px 0 0 0
 }
@@ -1454,10 +1467,17 @@ label.control-label {
 .form-group label {
 	font-size: 14px;
 	line-height: 1.428571429;
-	color: #aaa;
 	font-weight: 400
 }
-.form-group label.control-label {
+form.admin-x .form-group .checkbox label,
+form.admin-x .form-group .radio label,
+form.admin-x .form-group label
+.form-group label.control-label,
+.form-group label.col-form-label {
+	color: #aaa;
+}
+form.admin-x .form-group label.control-label,
+form.admin-x .form-group label.col-form-label {
 	font-size: 11px;
 	line-height: 1.0714285718;
 	color: #aaa;
@@ -1616,7 +1636,7 @@ label.control-label {
 	font-size: 14px;
 	line-height: .999999975
 }
-select.form-control {
+form.admin-x select.form-control {
 	border: 0;
 	box-shadow: none;
 	border-radius: 0
@@ -18070,11 +18090,11 @@ img.width50 {
 .form-horizontal .form-group {
 	margin-bottom: 0
 }
-.form-group {
+form.admin-x .form-group {
 	width: 100%;
-	margin-bottom: 10px
+	margin-bottom: 10px;
 }
-.form-group .form-control {
+form.admin-x .form-group .form-control {
 	width: 100%;
 	border: none;
 	box-shadow: none;
@@ -21476,4 +21496,73 @@ html.ie11 .dropdown-menu ul.menu li a {
 }
 html.ie11 .bs-searchbox .form-control {
 	width: 90%
+}
+
+/* Title, Description and Content Menu */
+.block-header p.intro {
+	font-size: 13px;
+	line-height: 20px;
+	color: #636c72;
+}
+.block-header {
+	margin-bottom: 25px;
+	padding: 10px 0 0 0;
+}
+.block-header .contentmenu * {
+	font-size: 14px;
+	line-height: 18px;
+}
+.block-header .contentmenu ul {
+	float: left;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	list-style: none;
+}
+.block-header .contentmenu ul.gridmenu {
+	float: right;
+}
+.block-header .contentmenu ul li {
+	float: left;
+	margin: 0 10px;
+}
+.block-header .contentmenu ul li:first-child {
+	margin-left: 0;
+}
+.block-header .contentmenu ul li:last-child {
+	margin-right: 0;
+}
+.block-header .contentmenu ul li a i {
+	margin-right: 6px;
+}
+/* Form */
+.form-group .small-px,
+.form-group label span {
+	padding: 0;
+	color: #636c72;
+	font-size: 12px;
+	line-height: 18px;
+}
+.form-group .small-px,
+.form-group label span:not([class]) {
+	display: block;
+}
+.form-group .small-px:first-child {
+	margin-bottom: 10px;
+}
+.form-group .small-px:last-child {
+	margin-top: 0;
+}
+.form-group label span:not([class]) {
+	padding-top: 10px;
+}
+.form-group .errorMessage {
+	margin-top: 5px;
+	font-size: 13px;
+	color: #ff0000;
+}
+.form-group p {
+	margin-top: 10px;
+}
+.form-group p:first-child {
+	margin-top: 0;
 }

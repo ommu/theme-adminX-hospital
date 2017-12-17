@@ -17,7 +17,7 @@
 ?>
 
 <div class="row clearfix">
-   <div class="col-lg-12">
+	<div class="col-lg-12">
 		<div class="people-list">
 			<div class="search clearfix">
 				<div class="form-group">

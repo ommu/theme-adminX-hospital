@@ -25,7 +25,7 @@
 		'validateOnSubmit'=>true,
 	),
 	'htmlOptions'=>array(
-		'class'=>'col-md-12',
+		'class'=>'col-md-12 admin-x',
 	),
 )); ?>
 	<?php if($condition == false || ($condition == true && $token == null)) {?>

@@ -611,11 +611,12 @@
 					<div class="col-sm-12 col-md-8 col-lg-4">
 						<h5>Email Newsletters</h5>
 						<p>Sign up for new MaterialWrap content, updates, and offers.</p>
-						<div class="input-group">
+						<form class="admin-x input-group">
 							<div class="form-line">
 								<input type="text" class="form-control date" placeholder="Enter your email...">
 							</div>
-							<span class="input-group-addon"> <i class="material-icons">send</i> </span> </div>
+							<span class="input-group-addon"> <i class="material-icons">send</i> </span>
+						</form>
 					</div>
 					<div class="col-sm-12 col-md-4 col-lg-2">
 						<h5>Company</h5>

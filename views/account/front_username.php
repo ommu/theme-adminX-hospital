@@ -20,7 +20,7 @@
 	$this->pageDescription = Yii::t('phrase', 'Enter your e-mail address below to reset your username.');
 ?>
 
-<form class="col-md-12" id="sign_in" method="POST">
+<form class="col-md-12 admin-x" id="sign_in" method="POST">
 	<div class="form-group form-float">
 		<div class="form-line">
 			<input type="email" class="form-control">

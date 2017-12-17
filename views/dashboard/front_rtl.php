@@ -266,11 +266,12 @@
 					<div class="col-lg-4 col-sm-12 col-md-6">
 						<h5>Email Newsletters</h5>
 						<p>Sign up for new MaterialWrap content, updates, and offers.</p>
-						<div class="input-group">
+						<form class="admin-x input-group">
 							<div class="form-line">
 								<input type="text" class="form-control date" placeholder="أدخل بريدك الإلكتروني...">
 							</div>
-							<span class="input-group-addon"> <i class="material-icons">send</i> </span> </div>
+							<span class="input-group-addon"> <i class="material-icons">send</i> </span>
+						</form>
 					</div>
 					<div class="col-lg-2 col-sm-12 col-md-6">
 						<h5>Company</h5>
