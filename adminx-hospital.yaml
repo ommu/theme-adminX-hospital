@@ -7,10 +7,10 @@ author			: Putra Sudaryanto
 
 preview_menu	:
 	database:
-		status: 0
+		status: 1
 		category: 'backoffice'
-	backoffice: 1
-	theme: 0
+	backoffice: 0
+	theme: 1
 
 theme_menu		:
 	- Theme Menus
@@ -176,4 +176,26 @@ theme_menu		:
 	- urlTitle: Information
 		urlRules: {siteType: -, userLevel: -}
 		urlPath: {url: -, attr: -, icon: "zmdi zmdi-chart-donut col-blue"}
-	
+
+settings			:
+	button: 'btn btn-raised'
+	button_type:
+		default: 'btn-default'
+		primary: 'btn-primary'
+		success: 'btn-success'
+		info: 'btn-info'
+		warning: 'btn-warning'
+		danger: 'btn-danger'
+
+# Display share buttons - Check if you want to display share buttons
+	single_share: 1
+# Social sharing - Choose social networks that you want to use for sharing posts
+	social_share: 
+		facebook: 1
+		twitter: 1
+		reddit: 1
+		pinterest: 1
+		email: 1
+		gplus: 0
+		linkedin: 0
+		stumbleupon: 0

@@ -18,7 +18,7 @@
 	$cs = Yii::app()->getClientScript();
 	$cs->registerCssFile(Yii::app()->theme->baseUrl.'/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css');
 	$cs->registerCssFile(Yii::app()->theme->baseUrl.'/plugins/waitMe/waitMe.css');
-	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/autosize/dist/autosize.js', CClientScript::POS_END); // Autosize Plugin Js
+	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/autosize/autosize.js', CClientScript::POS_END); // Autosize Plugin Js
 	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/momentjs/moment.js', CClientScript::POS_END); // Moment Plugin Js
 	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js', CClientScript::POS_END); // Bootstrap Material Datetime Picker Plugin Js
 	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/js/custom/basic-form-elements.js', CClientScript::POS_END);
