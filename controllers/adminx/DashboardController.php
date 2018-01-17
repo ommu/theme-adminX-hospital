@@ -1,7 +1,7 @@
 <?php
 /**
- * ReportsController
- * @var $this ReportsController
+ * DashboardController
+ * @var $this DashboardController
  * version: 0.0.1
  * Reference start
  *
@@ -16,17 +16,15 @@
  *----------------------------------------------------------------------------------------------------------
  */
 
-class ReportsController extends Controller
+class DashboardController extends Controller
 {
 	/**
 	 * Initialize public template
 	 */
 	public function init() 
 	{
-		$arrThemes = Utility::getCurrentTemplate('public');
-		Yii::app()->theme = $arrThemes['folder'];
-		$this->layout = $arrThemes['layout'];
-		Utility::applyViewPath(__dir__, false);
+		Yii::app()->theme = 'adminx-hospital';
+		$this->layout = 'main';
 	}
 
 	/**
@@ -38,7 +36,7 @@ class ReportsController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index'),
+				'actions'=>array('index','rtl'),
 				'users'=>array('@'),
 			),
 			array('deny',  // deny all users
@@ -52,9 +50,20 @@ class ReportsController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$this->pageTitle = Yii::t('phrase', 'Income Report');
+		$this->pageTitle = Yii::t('phrase', 'Dashboard');
 		$this->pageDescription = '';
 		$this->pageMeta = '';
-		$this->render('front_index');
+		$this->render('/adminx/dashboard/front_index');
+	}
+	
+	/**
+	 * Displays the login page
+	 */
+	public function actionRtl()
+	{
+		$this->pageTitle = Yii::t('phrase', 'لوحة القيادة (Dashboard)');
+		$this->pageDescription = '';
+		$this->pageMeta = '';
+		$this->render('/adminx/dashboard/front_rtl');
 	}
 }

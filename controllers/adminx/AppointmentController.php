@@ -1,7 +1,7 @@
 <?php
 /**
- * DoctorController
- * @var $this DoctorController
+ * AppointmentController
+ * @var $this AppointmentController
  * version: 0.0.1
  * Reference start
  *
@@ -16,17 +16,15 @@
  *----------------------------------------------------------------------------------------------------------
  */
 
-class DoctorController extends Controller
+class AppointmentController extends Controller
 {
 	/**
 	 * Initialize public template
 	 */
 	public function init() 
 	{
-		$arrThemes = Utility::getCurrentTemplate('public');
-		Yii::app()->theme = $arrThemes['folder'];
-		$this->layout = $arrThemes['layout'];
-		Utility::applyViewPath(__dir__, false);
+		Yii::app()->theme = 'adminx-hospital';
+		$this->layout = 'main';
 	}
 
 	/**
@@ -38,7 +36,7 @@ class DoctorController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','add','profile'),
+				'actions'=>array('index','schedule','book'),
 				'users'=>array('@'),
 			),
 			array('deny',  // deny all users
@@ -52,31 +50,28 @@ class DoctorController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$this->pageTitle = Yii::t('phrase', 'All Doctors');
-		$this->pageDescription = '';
-		$this->pageMeta = '';
-		$this->render('front_index');
+		$this->redirect(Yii::app()->controller->createUrl('schedule'));
 	}
 	
 	/**
 	 * Displays the login page
 	 */
-	public function actionAdd()
+	public function actionSchedule()
 	{
-		$this->pageTitle = Yii::t('phrase', 'Add Doctor');
+		$this->pageTitle = Yii::t('phrase', 'Doctor Schedule');
 		$this->pageDescription = '';
 		$this->pageMeta = '';
-		$this->render('front_add');
+		$this->render('/adminx/appointment/front_schedule');
 	}
 	
 	/**
 	 * Displays the login page
 	 */
-	public function actionProfile()
+	public function actionBook()
 	{
-		$this->pageTitle = Yii::t('phrase', 'Profile');
+		$this->pageTitle = Yii::t('phrase', 'Book Appointment');
 		$this->pageDescription = '';
 		$this->pageMeta = '';
-		$this->render('front_profile');
+		$this->render('/adminx/appointment/front_book');
 	}
 }

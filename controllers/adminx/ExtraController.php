@@ -1,7 +1,7 @@
 <?php
 /**
- * PatientController
- * @var $this PatientController
+ * ExtraController
+ * @var $this ExtraController
  * version: 0.0.1
  * Reference start
  *
@@ -16,17 +16,15 @@
  *----------------------------------------------------------------------------------------------------------
  */
 
-class PatientController extends Controller
+class ExtraController extends Controller
 {
 	/**
 	 * Initialize public template
 	 */
 	public function init() 
 	{
-		$arrThemes = Utility::getCurrentTemplate('public');
-		Yii::app()->theme = $arrThemes['folder'];
-		$this->layout = $arrThemes['layout'];
-		Utility::applyViewPath(__dir__, false);
+		Yii::app()->theme = 'adminx-hospital';
+		$this->layout = 'main';
 	}
 
 	/**
@@ -38,7 +36,7 @@ class PatientController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','add','profile','invoice'),
+				'actions'=>array('index','search','chat'),
 				'users'=>array('@'),
 			),
 			array('deny',  // deny all users
@@ -52,42 +50,28 @@ class PatientController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$this->pageTitle = Yii::t('phrase', 'All Patients');
-		$this->pageDescription = '';
-		$this->pageMeta = '';
-		$this->render('front_index');
+		$this->redirect(Yii::app()->controller->createUrl('search'));
 	}
 	
 	/**
 	 * Displays the login page
 	 */
-	public function actionAdd()
+	public function actionSearch()
 	{
-		$this->pageTitle = Yii::t('phrase', 'Add Patient');
+		$this->pageTitle = Yii::t('phrase', 'Search Results');
 		$this->pageDescription = '';
 		$this->pageMeta = '';
-		$this->render('front_add');
+		$this->render('/adminx/extra/front_search');
 	}
 	
 	/**
 	 * Displays the login page
 	 */
-	public function actionProfile()
+	public function actionChat()
 	{
-		$this->pageTitle = Yii::t('phrase', 'Patient Profile');
+		$this->pageTitle = Yii::t('phrase', 'Chats');
 		$this->pageDescription = '';
 		$this->pageMeta = '';
-		$this->render('front_profile');
-	}
-	
-	/**
-	 * Displays the login page
-	 */
-	public function actionInvoice()
-	{
-		$this->pageTitle = Yii::t('phrase', 'Invoice');
-		$this->pageDescription = '';
-		$this->pageMeta = '';
-		$this->render('front_invoice');
+		$this->render('/adminx/extra/front_chat');
 	}
 }

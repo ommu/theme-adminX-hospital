@@ -1,7 +1,7 @@
 <?php
 /**
- * AppointmentController
- * @var $this AppointmentController
+ * ReportsController
+ * @var $this ReportsController
  * version: 0.0.1
  * Reference start
  *
@@ -16,17 +16,15 @@
  *----------------------------------------------------------------------------------------------------------
  */
 
-class AppointmentController extends Controller
+class ReportsController extends Controller
 {
 	/**
 	 * Initialize public template
 	 */
 	public function init() 
 	{
-		$arrThemes = Utility::getCurrentTemplate('public');
-		Yii::app()->theme = $arrThemes['folder'];
-		$this->layout = $arrThemes['layout'];
-		Utility::applyViewPath(__dir__, false);
+		Yii::app()->theme = 'adminx-hospital';
+		$this->layout = 'main';
 	}
 
 	/**
@@ -38,7 +36,7 @@ class AppointmentController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','schedule','book'),
+				'actions'=>array('index'),
 				'users'=>array('@'),
 			),
 			array('deny',  // deny all users
@@ -52,28 +50,9 @@ class AppointmentController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$this->redirect(Yii::app()->controller->createUrl('schedule'));
-	}
-	
-	/**
-	 * Displays the login page
-	 */
-	public function actionSchedule()
-	{
-		$this->pageTitle = Yii::t('phrase', 'Doctor Schedule');
+		$this->pageTitle = Yii::t('phrase', 'Income Report');
 		$this->pageDescription = '';
 		$this->pageMeta = '';
-		$this->render('front_schedule');
-	}
-	
-	/**
-	 * Displays the login page
-	 */
-	public function actionBook()
-	{
-		$this->pageTitle = Yii::t('phrase', 'Book Appointment');
-		$this->pageDescription = '';
-		$this->pageMeta = '';
-		$this->render('front_book');
+		$this->render('/adminx/reports/front_index');
 	}
 }

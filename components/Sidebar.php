@@ -27,10 +27,17 @@ class Sidebar extends CWidget
 		$currentModule = strtolower(Yii::app()->controller->module->id.'/'.Yii::app()->controller->id);
 		$currentModuleAction = strtolower(Yii::app()->controller->module->id.'/'.Yii::app()->controller->id.'/'.Yii::app()->controller->action->id);
 
-		$themeMenuPreview = Utility::getThemeInfo(Yii::app()->theme->name, 'preview_menu');
+		$condition = 0;
+		$model = OmmuThemes::model()->findByAttributes(array(
+			'folder'=>Yii::app()->theme->name,
+		));
+		$configTheme = unserialize($model->config);
+		if($model != null && is_array($configTheme) && !empty($configTheme))
+			$condition = 1;
 
 		$this->render('sidebar',array(
-			'themeMenuPreview'=>$themeMenuPreview,
+			'condition'=>$condition,
+			'configTheme'=>$configTheme,
 			'module'=>$module,
 			'controller'=>$controller,
 			'action'=>$action,

@@ -1,7 +1,7 @@
 <?php
 /**
- * PaymentController
- * @var $this PaymentController
+ * DoctorController
+ * @var $this DoctorController
  * version: 0.0.1
  * Reference start
  *
@@ -16,17 +16,15 @@
  *----------------------------------------------------------------------------------------------------------
  */
 
-class PaymentController extends Controller
+class DoctorController extends Controller
 {
 	/**
 	 * Initialize public template
 	 */
 	public function init() 
 	{
-		$arrThemes = Utility::getCurrentTemplate('public');
-		Yii::app()->theme = $arrThemes['folder'];
-		$this->layout = $arrThemes['layout'];
-		Utility::applyViewPath(__dir__, false);
+		Yii::app()->theme = 'adminx-hospital';
+		$this->layout = 'main';
 	}
 
 	/**
@@ -38,7 +36,7 @@ class PaymentController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','add'),
+				'actions'=>array('index','add','profile'),
 				'users'=>array('@'),
 			),
 			array('deny',  // deny all users
@@ -52,10 +50,10 @@ class PaymentController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$this->pageTitle = Yii::t('phrase', 'Payments');
+		$this->pageTitle = Yii::t('phrase', 'All Doctors');
 		$this->pageDescription = '';
 		$this->pageMeta = '';
-		$this->render('front_index');
+		$this->render('/adminx/doctor/front_index');
 	}
 	
 	/**
@@ -63,9 +61,20 @@ class PaymentController extends Controller
 	 */
 	public function actionAdd()
 	{
-		$this->pageTitle = Yii::t('phrase', 'Add Payment');
+		$this->pageTitle = Yii::t('phrase', 'Add Doctor');
 		$this->pageDescription = '';
 		$this->pageMeta = '';
-		$this->render('front_add');
+		$this->render('/adminx/doctor/front_add');
+	}
+	
+	/**
+	 * Displays the login page
+	 */
+	public function actionProfile()
+	{
+		$this->pageTitle = Yii::t('phrase', 'Profile');
+		$this->pageDescription = '';
+		$this->pageMeta = '';
+		$this->render('/adminx/doctor/front_profile');
 	}
 }

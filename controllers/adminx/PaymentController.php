@@ -1,7 +1,7 @@
 <?php
 /**
- * WidgetsController
- * @var $this WidgetsController
+ * PaymentController
+ * @var $this PaymentController
  * version: 0.0.1
  * Reference start
  *
@@ -16,17 +16,15 @@
  *----------------------------------------------------------------------------------------------------------
  */
 
-class WidgetsController extends Controller
+class PaymentController extends Controller
 {
 	/**
 	 * Initialize public template
 	 */
 	public function init() 
 	{
-		$arrThemes = Utility::getCurrentTemplate('public');
-		Yii::app()->theme = $arrThemes['folder'];
-		$this->layout = $arrThemes['layout'];
-		Utility::applyViewPath(__dir__, false);
+		Yii::app()->theme = 'adminx-hospital';
+		$this->layout = 'main';
 	}
 
 	/**
@@ -38,7 +36,7 @@ class WidgetsController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index'),
+				'actions'=>array('index','add'),
 				'users'=>array('@'),
 			),
 			array('deny',  // deny all users
@@ -52,9 +50,20 @@ class WidgetsController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$this->pageTitle = Yii::t('phrase', 'More Widgets');
+		$this->pageTitle = Yii::t('phrase', 'Payments');
 		$this->pageDescription = '';
 		$this->pageMeta = '';
-		$this->render('front_index');
+		$this->render('/adminx/payment/front_index');
+	}
+	
+	/**
+	 * Displays the login page
+	 */
+	public function actionAdd()
+	{
+		$this->pageTitle = Yii::t('phrase', 'Add Payment');
+		$this->pageDescription = '';
+		$this->pageMeta = '';
+		$this->render('/adminx/payment/front_add');
 	}
 }

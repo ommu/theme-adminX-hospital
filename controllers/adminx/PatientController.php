@@ -1,7 +1,7 @@
 <?php
 /**
- * DashboardController
- * @var $this DashboardController
+ * PatientController
+ * @var $this PatientController
  * version: 0.0.1
  * Reference start
  *
@@ -16,17 +16,15 @@
  *----------------------------------------------------------------------------------------------------------
  */
 
-class DashboardController extends Controller
+class PatientController extends Controller
 {
 	/**
 	 * Initialize public template
 	 */
 	public function init() 
 	{
-		$arrThemes = Utility::getCurrentTemplate('public');
-		Yii::app()->theme = $arrThemes['folder'];
-		$this->layout = $arrThemes['layout'];
-		Utility::applyViewPath(__dir__, false);
+		Yii::app()->theme = 'adminx-hospital';
+		$this->layout = 'main';
 	}
 
 	/**
@@ -38,7 +36,7 @@ class DashboardController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','rtl'),
+				'actions'=>array('index','add','profile','invoice'),
 				'users'=>array('@'),
 			),
 			array('deny',  // deny all users
@@ -52,20 +50,42 @@ class DashboardController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$this->pageTitle = Yii::t('phrase', 'Dashboard');
+		$this->pageTitle = Yii::t('phrase', 'All Patients');
 		$this->pageDescription = '';
 		$this->pageMeta = '';
-		$this->render('front_index');
+		$this->render('/adminx/patient/front_index');
 	}
 	
 	/**
 	 * Displays the login page
 	 */
-	public function actionRtl()
+	public function actionAdd()
 	{
-		$this->pageTitle = Yii::t('phrase', 'لوحة القيادة (Dashboard)');
+		$this->pageTitle = Yii::t('phrase', 'Add Patient');
 		$this->pageDescription = '';
 		$this->pageMeta = '';
-		$this->render('front_rtl');
+		$this->render('/adminx/patient/front_add');
+	}
+	
+	/**
+	 * Displays the login page
+	 */
+	public function actionProfile()
+	{
+		$this->pageTitle = Yii::t('phrase', 'Patient Profile');
+		$this->pageDescription = '';
+		$this->pageMeta = '';
+		$this->render('/adminx/patient/front_profile');
+	}
+	
+	/**
+	 * Displays the login page
+	 */
+	public function actionInvoice()
+	{
+		$this->pageTitle = Yii::t('phrase', 'Invoice');
+		$this->pageDescription = '';
+		$this->pageMeta = '';
+		$this->render('/adminx/patient/front_invoice');
 	}
 }

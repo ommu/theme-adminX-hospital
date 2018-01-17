@@ -16,9 +16,14 @@
 	<div class="menu">
 		<ul class="list">
 			<?php $this->widget('SidebarMenuAccount'); // Sidebar Menu Account ?>
-			<?php $themeMenuPreview['database']['status'] == 1 ? $this->widget('SidebarMenuFromDatabase', array('category'=>$themeMenuPreview['database']['category'])) : ''; // Sidebar Menu Database ?>
-			<?php $themeMenuPreview['backoffice'] == 1 ? $this->widget('SidebarMenuBackoffice') : ''; // Sidebar Menu Backoffice ?>
-			<?php $themeMenuPreview['theme'] == 1 ? $this->widget('SidebarMenuFromTheme') : ''; // Sidebar Menu Theme ?>
+
+			<?php if(!$condition || ($condition && $configTheme['menu']['option'] == 'theme'))
+				$this->widget('SidebarMenuFromTheme'); // Sidebar Menu from Theme
+			else if($configTheme['menu']['option'] == 'backoffice')
+				$this->widget('SidebarMenuBackoffice'); // Sidebar Menu from Backoffice
+			else if($configTheme['menu']['option'] == 'database')
+				$this->widget('SidebarMenuFromDatabase', array('category'=>$configTheme['menu']['database-category'])); // Sidebar Menu from Database
+			?>
 		</ul>
 	</div>
 	<?php //end.Menu ?>

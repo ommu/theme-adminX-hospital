@@ -1,181 +1,23 @@
 group_page		: admin
-name			: adminX Hospital
+name			: adminX Hospital - The Ultimate bootstrap4 Dashboard
 folder			: adminx-hospital
 layout			: main
 thumbnail		: adminx_hospital.png
-author			: Putra Sudaryanto
 
-preview_menu	:
-	database:
-		status: 1
-		category: 'backoffice'
-	backoffice: 0
-	theme: 1
+author:
+  name: Putra Sudaryanto
+  phone: (+62)856-299-4114
+  email: putra@sudaryanto.id
+  homepage: https://sudaryanto.id
 
-theme_menu		:
-	- Theme Menus
-
-	- urlTitle: Dashboard
-		urlRules: {siteType: -, userLevel: -}
-		urlPath: {url: dashboard/index, attr: -, icon: "zmdi zmdi-home"}
-
-	- urlTitle: Dashboard RTL
-		urlRules: {siteType: -, userLevel: -}
-		urlPath: {url: dashboard/rtl, attr: -, icon: "zmdi zmdi-home"}
-
-	- urlTitle: Appointment
-		urlRules: {siteType: -, userLevel: -}
-		urlPath: {url: -, attr: -, icon: "zmdi zmdi-calendar-check"}
-		submenu :
-			- urlTitle: Doctor Schedule
-				urlRules: {siteType: -, userLevel: -}
-				urlPath: {url: appointment/schedule, attr: -, icon: -}
-			- urlTitle: Book Appointment
-				urlRules: {siteType: -, userLevel: -}
-				urlPath: {url: appointment/book, attr: -, icon: -}
-
-	- urlTitle: Doctors
-		urlRules: {siteType: -, userLevel: -}
-		urlPath: {url: -, attr: -, icon: "zmdi zmdi-account-add"}
-		submenu :
-			- urlTitle: All Doctors
-				urlRules: {siteType: -, userLevel: -}
-				urlPath: {url: doctor/index, attr: -, icon: -}
-			- urlTitle: Add Doctor
-				urlRules: {siteType: -, userLevel: -}
-				urlPath: {url: doctor/add, attr: -, icon: -}
-			- urlTitle: Doctor Profile
-				urlRules: {siteType: -, userLevel: -}
-				urlPath: {url: doctor/profile, attr: -, icon: -}
-
-	- urlTitle: Patients
-		urlRules: {siteType: -, userLevel: -}
-		urlPath: {url: -, attr: -, icon: "zmdi zmdi-account-o"}
-		submenu :
-			- urlTitle: All Patients
-				urlRules: {siteType: -, userLevel: -}
-				urlPath: {url: patient/index, attr: -, icon: -}
-			- urlTitle: Add Patient
-				urlRules: {siteType: -, userLevel: -}
-				urlPath: {url: patient/add, attr: -, icon: -}
-			- urlTitle: Patient Profile
-				urlRules: {siteType: -, userLevel: -}
-				urlPath: {url: patient/profile, attr: -, icon: -}
-			- urlTitle: Patient Invoice
-				urlRules: {siteType: -, userLevel: -}
-				urlPath: {url: patient/invoice, attr: -, icon: -}
-
-	- urlTitle: Payments
-		urlRules: {siteType: -, userLevel: -}
-		urlPath: {url: -, attr: -, icon: "zmdi zmdi-balance-wallet"}
-		submenu :
-			- urlTitle: Payments
-				urlRules: {siteType: -, userLevel: -}
-				urlPath: {url: payment/index, attr: -, icon: -}
-			- urlTitle: Add Payment
-				urlRules: {siteType: -, userLevel: -}
-				urlPath: {url: payment/add, attr: -, icon: -}
-
-	- urlTitle: Reports
-		urlRules: {siteType: -, userLevel: -}
-		urlPath: {url: reports/index, attr: -, icon: "zmdi zmdi-file-text"}
-
-	- urlTitle: Widgets
-		urlRules: {siteType: -, userLevel: -}
-		urlPath: {url: widgets/index, attr: -, icon: "zmdi zmdi-delicious"}
-
-	- urlTitle: Extra Pages
-		urlRules: {siteType: -, userLevel: -}
-		urlPath: {url: -, attr: -, icon: "zmdi zmdi-copy"}
-		submenu :
-			- urlTitle: Chat
-				urlRules: {siteType: -, userLevel: -}
-				urlPath: {url: extra/chat, attr: -, icon: -}
-			- urlTitle: Search Results
-				urlRules: {siteType: -, userLevel: -}
-				urlPath: {url: extra/search, attr: -, icon: -}
-
-	- urlTitle: User Interface (UI)
-		urlRules: {siteType: -, userLevel: -}
-		urlPath: {url: -, attr: -, icon: "zmdi zmdi-swap-alt"}
-		submenu :
-			- urlTitle: Alerts
-				urlRules: {siteType: -, userLevel: -}
-				urlPath: {url: ui/alerts, attr: -, icon: -}
-			- urlTitle: Animations
-				urlRules: {siteType: -, userLevel: -}
-				urlPath: {url: ui/animations, attr: -, icon: -}
-			- urlTitle: Badges
-				urlRules: {siteType: -, userLevel: -}
-				urlPath: {url: ui/badges, attr: -, icon: -}
-			- urlTitle: Breadcrumbs
-				urlRules: {siteType: -, userLevel: -}
-				urlPath: {url: ui/breadcrumbs, attr: -, icon: -}
-			- urlTitle: Buttons
-				urlRules: {siteType: -, userLevel: -}
-				urlPath: {url: ui/buttons, attr: -, icon: -}
-			- urlTitle: Collapse
-				urlRules: {siteType: -, userLevel: -}
-				urlPath: {url: ui/collapse, attr: -, icon: -}
-			- urlTitle: Colors
-				urlRules: {siteType: -, userLevel: -}
-				urlPath: {url: ui/colors, attr: -, icon: -}
-			- urlTitle: Dialogs
-				urlRules: {siteType: -, userLevel: -}
-				urlPath: {url: ui/dialogs, attr: -, icon: -}
-			- urlTitle: Icons
-				urlRules: {siteType: -, userLevel: -}
-				urlPath: {url: ui/icons, attr: -, icon: -}
-			- urlTitle: Labels
-				urlRules: {siteType: -, userLevel: -}
-				urlPath: {url: ui/labels, attr: -, icon: -}
-			- urlTitle: List Group
-				urlRules: {siteType: -, userLevel: -}
-				urlPath: {url: ui/listgroup, attr: -, icon: -}
-			- urlTitle: Media Object
-				urlRules: {siteType: -, userLevel: -}
-				urlPath: {url: ui/mediaobject, attr: -, icon: -}
-			- urlTitle: Modals
-				urlRules: {siteType: -, userLevel: -}
-				urlPath: {url: ui/modals, attr: -, icon: -}
-			- urlTitle: Notifications
-				urlRules: {siteType: -, userLevel: -}
-				urlPath: {url: ui/notifications, attr: -, icon: -}
-			- urlTitle: Pagination
-				urlRules: {siteType: -, userLevel: -}
-				urlPath: {url: ui/pagination, attr: -, icon: -}
-			- urlTitle: Preloaders
-				urlRules: {siteType: -, userLevel: -}
-				urlPath: {url: ui/preloaders, attr: -, icon: -}
-			- urlTitle: Progress Bars
-				urlRules: {siteType: -, userLevel: -}
-				urlPath: {url: ui/progressbars, attr: -, icon: -}
-			- urlTitle: Range Sliders
-				urlRules: {siteType: -, userLevel: -}
-				urlPath: {url: ui/rangesliders, attr: -, icon: -}
-			- urlTitle: Sortable & Nestable
-				urlRules: {siteType: -, userLevel: -}
-				urlPath: {url: ui/sortablenestable, attr: -, icon: -}
-			- urlTitle: Tabs
-				urlRules: {siteType: -, userLevel: -}
-				urlPath: {url: ui/tabs, attr: -, icon: -}
-			- urlTitle: Waves
-				urlRules: {siteType: -, userLevel: -}
-				urlPath: {url: ui/waves, attr: -, icon: -}
-
-	- Labels
-
-	- urlTitle: Important
-		urlRules: {siteType: -, userLevel: -}
-		urlPath: {url: -, attr: -, icon: "zmdi zmdi-chart-donut col-red"}
-
-	- urlTitle: Warning
-		urlRules: {siteType: -, userLevel: -}
-		urlPath: {url: -, attr: -, icon: "zmdi zmdi-chart-donut col-amber"}
-
-	- urlTitle: Information
-		urlRules: {siteType: -, userLevel: -}
-		urlPath: {url: -, attr: -, icon: "zmdi zmdi-chart-donut col-blue"}
+config:
+  menu:
+    label: Menus
+    option:
+      database: Database
+      backoffice: Backoffice
+      theme: Theme
+    database-category: Category Menu from Database
 
 settings			:
 	button: 'btn btn-raised'
@@ -199,3 +41,168 @@ settings			:
 		gplus: 0
 		linkedin: 0
 		stumbleupon: 0
+
+theme_menu		:
+	- Theme Menus
+
+	- urlTitle: Dashboard
+		urlRules: {siteType: -, userLevel: -}
+		urlPath: {url: adminxdashboard/index, attr: -, icon: "zmdi zmdi-home"}
+
+	- urlTitle: Dashboard RTL
+		urlRules: {siteType: -, userLevel: -}
+		urlPath: {url: adminxdashboard/rtl, attr: -, icon: "zmdi zmdi-home"}
+
+	- urlTitle: Appointment
+		urlRules: {siteType: -, userLevel: -}
+		urlPath: {url: -, attr: -, icon: "zmdi zmdi-calendar-check"}
+		submenu :
+			- urlTitle: Doctor Schedule
+				urlRules: {siteType: -, userLevel: -}
+				urlPath: {url: adminxappointment/schedule, attr: -, icon: -}
+			- urlTitle: Book Appointment
+				urlRules: {siteType: -, userLevel: -}
+				urlPath: {url: adminxappointment/book, attr: -, icon: -}
+
+	- urlTitle: Doctors
+		urlRules: {siteType: -, userLevel: -}
+		urlPath: {url: -, attr: -, icon: "zmdi zmdi-account-add"}
+		submenu :
+			- urlTitle: All Doctors
+				urlRules: {siteType: -, userLevel: -}
+				urlPath: {url: adminxdoctor/index, attr: -, icon: -}
+			- urlTitle: Add Doctor
+				urlRules: {siteType: -, userLevel: -}
+				urlPath: {url: adminxdoctor/add, attr: -, icon: -}
+			- urlTitle: Doctor Profile
+				urlRules: {siteType: -, userLevel: -}
+				urlPath: {url: adminxdoctor/profile, attr: -, icon: -}
+
+	- urlTitle: Patients
+		urlRules: {siteType: -, userLevel: -}
+		urlPath: {url: -, attr: -, icon: "zmdi zmdi-account-o"}
+		submenu :
+			- urlTitle: All Patients
+				urlRules: {siteType: -, userLevel: -}
+				urlPath: {url: adminxpatient/index, attr: -, icon: -}
+			- urlTitle: Add Patient
+				urlRules: {siteType: -, userLevel: -}
+				urlPath: {url: adminxpatient/add, attr: -, icon: -}
+			- urlTitle: Patient Profile
+				urlRules: {siteType: -, userLevel: -}
+				urlPath: {url: adminxpatient/profile, attr: -, icon: -}
+			- urlTitle: Patient Invoice
+				urlRules: {siteType: -, userLevel: -}
+				urlPath: {url: adminxpatient/invoice, attr: -, icon: -}
+
+	- urlTitle: Payments
+		urlRules: {siteType: -, userLevel: -}
+		urlPath: {url: -, attr: -, icon: "zmdi zmdi-balance-wallet"}
+		submenu :
+			- urlTitle: Payments
+				urlRules: {siteType: -, userLevel: -}
+				urlPath: {url: adminxpayment/index, attr: -, icon: -}
+			- urlTitle: Add Payment
+				urlRules: {siteType: -, userLevel: -}
+				urlPath: {url: adminxpayment/add, attr: -, icon: -}
+
+	- urlTitle: Reports
+		urlRules: {siteType: -, userLevel: -}
+		urlPath: {url: adminxreports/index, attr: -, icon: "zmdi zmdi-file-text"}
+
+	- urlTitle: Widgets
+		urlRules: {siteType: -, userLevel: -}
+		urlPath: {url: adminxwidgets/index, attr: -, icon: "zmdi zmdi-delicious"}
+
+	- urlTitle: Extra Pages
+		urlRules: {siteType: -, userLevel: -}
+		urlPath: {url: -, attr: -, icon: "zmdi zmdi-copy"}
+		submenu :
+			- urlTitle: Chat
+				urlRules: {siteType: -, userLevel: -}
+				urlPath: {url: adminxextra/chat, attr: -, icon: -}
+			- urlTitle: Search Results
+				urlRules: {siteType: -, userLevel: -}
+				urlPath: {url: adminxextra/search, attr: -, icon: -}
+
+	- urlTitle: User Interface (UI)
+		urlRules: {siteType: -, userLevel: -}
+		urlPath: {url: -, attr: -, icon: "zmdi zmdi-swap-alt"}
+		submenu :
+			- urlTitle: Alerts
+				urlRules: {siteType: -, userLevel: -}
+				urlPath: {url: adminxui/alerts, attr: -, icon: -}
+			- urlTitle: Animations
+				urlRules: {siteType: -, userLevel: -}
+				urlPath: {url: adminxui/animations, attr: -, icon: -}
+			- urlTitle: Badges
+				urlRules: {siteType: -, userLevel: -}
+				urlPath: {url: adminxui/badges, attr: -, icon: -}
+			- urlTitle: Breadcrumbs
+				urlRules: {siteType: -, userLevel: -}
+				urlPath: {url: adminxui/breadcrumbs, attr: -, icon: -}
+			- urlTitle: Buttons
+				urlRules: {siteType: -, userLevel: -}
+				urlPath: {url: adminxui/buttons, attr: -, icon: -}
+			- urlTitle: Collapse
+				urlRules: {siteType: -, userLevel: -}
+				urlPath: {url: adminxui/collapse, attr: -, icon: -}
+			- urlTitle: Colors
+				urlRules: {siteType: -, userLevel: -}
+				urlPath: {url: adminxui/colors, attr: -, icon: -}
+			- urlTitle: Dialogs
+				urlRules: {siteType: -, userLevel: -}
+				urlPath: {url: adminxui/dialogs, attr: -, icon: -}
+			- urlTitle: Icons
+				urlRules: {siteType: -, userLevel: -}
+				urlPath: {url: adminxui/icons, attr: -, icon: -}
+			- urlTitle: Labels
+				urlRules: {siteType: -, userLevel: -}
+				urlPath: {url: adminxui/labels, attr: -, icon: -}
+			- urlTitle: List Group
+				urlRules: {siteType: -, userLevel: -}
+				urlPath: {url: adminxui/listgroup, attr: -, icon: -}
+			- urlTitle: Media Object
+				urlRules: {siteType: -, userLevel: -}
+				urlPath: {url: adminxui/mediaobject, attr: -, icon: -}
+			- urlTitle: Modals
+				urlRules: {siteType: -, userLevel: -}
+				urlPath: {url: adminxui/modals, attr: -, icon: -}
+			- urlTitle: Notifications
+				urlRules: {siteType: -, userLevel: -}
+				urlPath: {url: adminxui/notifications, attr: -, icon: -}
+			- urlTitle: Pagination
+				urlRules: {siteType: -, userLevel: -}
+				urlPath: {url: adminxui/pagination, attr: -, icon: -}
+			- urlTitle: Preloaders
+				urlRules: {siteType: -, userLevel: -}
+				urlPath: {url: adminxui/preloaders, attr: -, icon: -}
+			- urlTitle: Progress Bars
+				urlRules: {siteType: -, userLevel: -}
+				urlPath: {url: adminxui/progressbars, attr: -, icon: -}
+			- urlTitle: Range Sliders
+				urlRules: {siteType: -, userLevel: -}
+				urlPath: {url: adminxui/rangesliders, attr: -, icon: -}
+			- urlTitle: Sortable & Nestable
+				urlRules: {siteType: -, userLevel: -}
+				urlPath: {url: adminxui/sortablenestable, attr: -, icon: -}
+			- urlTitle: Tabs
+				urlRules: {siteType: -, userLevel: -}
+				urlPath: {url: adminxui/tabs, attr: -, icon: -}
+			- urlTitle: Waves
+				urlRules: {siteType: -, userLevel: -}
+				urlPath: {url: adminxui/waves, attr: -, icon: -}
+
+	- Labels
+
+	- urlTitle: Important
+		urlRules: {siteType: -, userLevel: -}
+		urlPath: {url: -, attr: -, icon: "zmdi zmdi-chart-donut col-red"}
+
+	- urlTitle: Warning
+		urlRules: {siteType: -, userLevel: -}
+		urlPath: {url: -, attr: -, icon: "zmdi zmdi-chart-donut col-amber"}
+
+	- urlTitle: Information
+		urlRules: {siteType: -, userLevel: -}
+		urlPath: {url: -, attr: -, icon: "zmdi zmdi-chart-donut col-blue"}

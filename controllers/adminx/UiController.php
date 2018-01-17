@@ -24,10 +24,8 @@ class UiController extends Controller
 	 */
 	public function init() 
 	{
-		$arrThemes = Utility::getCurrentTemplate('public');
-		Yii::app()->theme = $arrThemes['folder'];
-		$this->layout = $arrThemes['layout'];
-		Utility::applyViewPath(__dir__, false);
+		Yii::app()->theme = 'adminx-hospital';
+		$this->layout = 'main';
 	}
 
 	/**
@@ -64,7 +62,7 @@ class UiController extends Controller
 		$this->pageTitle = Yii::t('phrase', 'Typography');
 		$this->pageDescription = '';
 		$this->pageMeta = '';
-		$this->render('front_typography');
+		$this->render('/adminx/ui/front_typography');
 	}
 	
 	/**
@@ -75,7 +73,7 @@ class UiController extends Controller
 		$this->pageTitle = Yii::t('phrase', 'Helper Clasdees');
 		$this->pageDescription = '';
 		$this->pageMeta = '';
-		$this->render('front_helperclasses');
+		$this->render('/adminx/ui/front_helperclasses');
 	}
 	
 	/**
@@ -86,7 +84,7 @@ class UiController extends Controller
 		$this->pageTitle = Yii::t('phrase', 'Alerts');
 		$this->pageDescription = '';
 		$this->pageMeta = '';
-		$this->render('front_alerts');
+		$this->render('/adminx/ui/front_alerts');
 	}
 	
 	/**
@@ -97,7 +95,7 @@ class UiController extends Controller
 		$this->pageTitle = Yii::t('phrase', 'Animations');
 		$this->pageDescription = '';
 		$this->pageMeta = '';
-		$this->render('front_animations');
+		$this->render('/adminx/ui/front_animations');
 	}
 	
 	/**
@@ -108,7 +106,7 @@ class UiController extends Controller
 		$this->pageTitle = Yii::t('phrase', 'Badges');
 		$this->pageDescription = '';
 		$this->pageMeta = '';
-		$this->render('front_badges');
+		$this->render('/adminx/ui/front_badges');
 	}
 	
 	/**
@@ -119,7 +117,7 @@ class UiController extends Controller
 		$this->pageTitle = Yii::t('phrase', 'Breadcrumbs');
 		$this->pageDescription = '';
 		$this->pageMeta = '';
-		$this->render('front_breadcrumbs');
+		$this->render('/adminx/ui/front_breadcrumbs');
 	}
 	
 	/**
@@ -130,7 +128,7 @@ class UiController extends Controller
 		$this->pageTitle = Yii::t('phrase', 'Buttons');
 		$this->pageDescription = '';
 		$this->pageMeta = '';
-		$this->render('front_buttons');
+		$this->render('/adminx/ui/front_buttons');
 	}
 	
 	/**
@@ -141,7 +139,7 @@ class UiController extends Controller
 		$this->pageTitle = Yii::t('phrase', 'Collapse');
 		$this->pageDescription = '';
 		$this->pageMeta = '';
-		$this->render('front_collapse');
+		$this->render('/adminx/ui/front_collapse');
 	}
 	
 	/**
@@ -152,7 +150,7 @@ class UiController extends Controller
 		$this->pageTitle = Yii::t('phrase', 'Colors');
 		$this->pageDescription = '';
 		$this->pageMeta = '';
-		$this->render('front_colors');
+		$this->render('/adminx/ui/front_colors');
 	}
 	
 	/**
@@ -163,7 +161,7 @@ class UiController extends Controller
 		$this->pageTitle = Yii::t('phrase', 'Sweet Alert Dialogs');
 		$this->pageDescription = '';
 		$this->pageMeta = '';
-		$this->render('front_dialogs');
+		$this->render('/adminx/ui/front_dialogs');
 	}
 	
 	/**
@@ -174,7 +172,7 @@ class UiController extends Controller
 		$this->pageTitle = Yii::t('phrase', 'Material Design Icons');
 		$this->pageDescription = '';
 		$this->pageMeta = '';
-		$this->render('front_icons');
+		$this->render('/adminx/ui/front_icons');
 	}
 	
 	/**
@@ -185,7 +183,7 @@ class UiController extends Controller
 		$this->pageTitle = Yii::t('phrase', 'Labels');
 		$this->pageDescription = '';
 		$this->pageMeta = '';
-		$this->render('front_labels');
+		$this->render('/adminx/ui/front_labels');
 	}
 	
 	/**
@@ -196,7 +194,7 @@ class UiController extends Controller
 		$this->pageTitle = Yii::t('phrase', 'List groups');
 		$this->pageDescription = '';
 		$this->pageMeta = '';
-		$this->render('front_listgroup');
+		$this->render('/adminx/ui/front_listgroup');
 	}
 	
 	/**
@@ -207,7 +205,7 @@ class UiController extends Controller
 		$this->pageTitle = Yii::t('phrase', 'Media Object');
 		$this->pageDescription = '';
 		$this->pageMeta = '';
-		$this->render('front_mediaobject');
+		$this->render('/adminx/ui/front_mediaobject');
 	}
 	
 	/**
@@ -218,7 +216,7 @@ class UiController extends Controller
 		$this->pageTitle = Yii::t('phrase', 'Modals');
 		$this->pageDescription = '';
 		$this->pageMeta = '';
-		$this->render('front_modals');
+		$this->render('/adminx/ui/front_modals');
 	}
 	
 	/**
@@ -229,7 +227,7 @@ class UiController extends Controller
 		$this->pageTitle = Yii::t('phrase', 'Notifications');
 		$this->pageDescription = '';
 		$this->pageMeta = '';
-		$this->render('front_notifications');
+		$this->render('/adminx/ui/front_notifications');
 	}
 	
 	/**
@@ -240,7 +238,7 @@ class UiController extends Controller
 		$this->pageTitle = Yii::t('phrase', 'Pagination');
 		$this->pageDescription = '';
 		$this->pageMeta = '';
-		$this->render('front_pagination');
+		$this->render('/adminx/ui/front_pagination');
 	}
 	
 	/**
@@ -251,7 +249,7 @@ class UiController extends Controller
 		$this->pageTitle = Yii::t('phrase', 'Preloaders');
 		$this->pageDescription = '';
 		$this->pageMeta = '';
-		$this->render('front_preloaders');
+		$this->render('/adminx/ui/front_preloaders');
 	}
 	
 	/**
@@ -262,7 +260,7 @@ class UiController extends Controller
 		$this->pageTitle = Yii::t('phrase', 'Progress Bars');
 		$this->pageDescription = '';
 		$this->pageMeta = '';
-		$this->render('front_progressbars');
+		$this->render('/adminx/ui/front_progressbars');
 	}
 	
 	/**
@@ -273,7 +271,7 @@ class UiController extends Controller
 		$this->pageTitle = Yii::t('phrase', 'Range Sliders');
 		$this->pageDescription = '';
 		$this->pageMeta = '';
-		$this->render('front_rangesliders');
+		$this->render('/adminx/ui/front_rangesliders');
 	}
 	
 	/**
@@ -284,7 +282,7 @@ class UiController extends Controller
 		$this->pageTitle = Yii::t('phrase', 'Sortable & Nestable');
 		$this->pageDescription = '';
 		$this->pageMeta = '';
-		$this->render('front_sortable_nestable');
+		$this->render('/adminx/ui/front_sortable_nestable');
 	}
 	
 	/**
@@ -295,7 +293,7 @@ class UiController extends Controller
 		$this->pageTitle = Yii::t('phrase', 'Tabs');
 		$this->pageDescription = '';
 		$this->pageMeta = '';
-		$this->render('front_tabs');
+		$this->render('/adminx/ui/front_tabs');
 	}
 	
 	/**
@@ -306,6 +304,6 @@ class UiController extends Controller
 		$this->pageTitle = Yii::t('phrase', 'Waves');
 		$this->pageDescription = '';
 		$this->pageMeta = '';
-		$this->render('front_waves');
+		$this->render('/adminx/ui/front_waves');
 	}
 }
