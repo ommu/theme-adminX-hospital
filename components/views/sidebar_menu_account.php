@@ -16,18 +16,19 @@
 		if($model->photos != '' && file_exists($userPath.'/'.$model->photos))
 			$image = Yii::app()->request->baseUrl.'/'.$userPath.'/'.$model->photos;
 	}
+	$displayname = !Yii::app()->user->isGuest ? Yii::app()->user->displayname : 'Ommu Platform';
 ?>
 
 <li> 
 	<?php //begin.User Info ?>
 	<div class="user-info">
-		<div class="admin-image"> <img src="<?php echo Utility::getTimThumb($image, 65, 65, 1);?>" alt="<?php echo $model->photos != '' ? Yii::app()->user->displayname : 'Ommu Platform';?>"> </div>
+		<div class="admin-image"> <img src="<?php echo Utility::getTimThumb($image, 65, 65, 1);?>" alt="<?php echo $displayname;?>"> </div>
 		<div class="admin-action-info">
 			<span><?php echo Yii::t('phrase', 'Welcome');?></span>
-			<h3><?php echo Yii::app()->user->displayname;?></h3>
+			<h3><?php echo $displayname;?></h3>
 			<ul>
 				<li><a data-placement="bottom" title="<?php echo Yii::t('phrase', 'Go to Inbox');?>" href="mail-inbox.html"><i class="zmdi zmdi-email"></i></a></li>
-				<li><a data-placement="bottom" title="<?php echo Yii::t('phrase', 'Go to Profile');?>" href="<?php echo Yii::app()->createUrl('doctor/profile');?>"><i class="zmdi zmdi-account"></i></a></li>
+				<li><a data-placement="bottom" title="<?php echo Yii::t('phrase', 'Go to Profile');?>" href="<?php echo Yii::app()->createUrl('adminxdoctor/profile');?>"><i class="zmdi zmdi-account"></i></a></li>
 				<?php if(Yii::app()->user->isGuest):?>
 				<li><a data-placement="bottom" title="<?php echo Yii::t('phrase', 'Sign In');?>" href="<?php echo Yii::app()->createUrl('site/login');?>" ><i class="zmdi zmdi-sign-in"></i></a></li>
 				<?php endif;?>

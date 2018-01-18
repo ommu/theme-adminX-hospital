@@ -27,6 +27,8 @@
 		$menuRender = 4;
 		$title = 'Submenu';
 	}
+
+	$displayname = !Yii::app()->user->isGuest ? Yii::app()->user->displayname : 'Ommu Platform';
 ?>
 
 <li class="header">BACKOFFICE MENUS</li>
@@ -96,8 +98,8 @@
 				}
 			}
 		}?>
-		<li><a href="<?php echo Yii::app()->createUrl('users/o/admin/edit')?>" title="<?php echo Yii::t('phrase', 'Edit Account').': '.Yii::app()->user->displayname;?>"><?php echo Yii::t('phrase', 'Edit Account');?></a></li>
-		<li><a href="<?php echo Yii::app()->createUrl('users/o/admin/password')?>" title="<?php echo Yii::t('phrase', 'Change Password').': '.Yii::app()->user->displayname;?>"><?php echo Yii::t('phrase', 'Change Password');?></a></li>
+		<li><a href="<?php echo Yii::app()->createUrl('users/o/admin/edit')?>" title="<?php echo Yii::t('phrase', 'Edit Account: {displayname}', array('{displayname}'=>$displayname));?>"><?php echo Yii::t('phrase', 'Edit Account');?></a></li>
+		<li><a href="<?php echo Yii::app()->createUrl('users/o/admin/password')?>" title="<?php echo Yii::t('phrase', 'Change Password: {displayname}', array('{displayname}'=>$displayname));?>"><?php echo Yii::t('phrase', 'Change Password');?></a></li>
 	</ul>
 </li>
 
@@ -105,11 +107,11 @@
 	<a class="menu-toggle" href="javascript:void(0);" title="<?php echo Yii::t('phrase', 'Content');?>"><i class="zmdi zmdi-home"></i><span><?php echo Yii::t('phrase', 'Content');?></span></a>
 	<ul class="ml-menu">
 		<li <?php echo in_array($controller, array('content','view','history')) ? 'class="active"' : '';?>><a href="<?php echo Yii::app()->createUrl('content/manage');?>" title="<?php echo Yii::t('phrase', 'Pages');?>"><?php echo Yii::t('phrase', 'Pages');?></a></li>
-		<?php if(Yii::app()->user->level == 1) {?>
+		<?php if(!Yii::app()->user->isGuest && Yii::app()->user->level == 1) {?>
 			<li <?php echo $controller == 'module' ? 'class="active"' : '';?>><a href="<?php echo Yii::app()->createUrl('module/manage');?>" title="<?php echo Yii::t('phrase', 'Modules');?>"><?php echo Yii::t('phrase', 'Modules');?></a></li>
 		<?php }?>
 		<li <?php echo $controller == 'globaltag' ? 'class="active"' : '';?>><a href="<?php echo Yii::app()->createUrl('globaltag/manage');?>" title="<?php echo Yii::t('phrase', 'Tags');?>"><?php echo Yii::t('phrase', 'Tags');?></a></li>
-		<?php if(Yii::app()->user->level == 1) {?>
+		<?php if(!Yii::app()->user->isGuest && Yii::app()->user->level == 1) {?>
 			<li <?php echo $controller == 'menu' ? 'class="active"' : '';?>><a href="<?php echo Yii::app()->createUrl('menu/manage');?>" title="<?php echo Yii::t('phrase', 'Menus');?>"><?php echo Yii::t('phrase', 'Menus');?></a></li>
 		<?php }?>
 		<li <?php echo $controller == 'translate' ? 'class="active"' : '';?>><a href="<?php echo Yii::app()->createUrl('translate/manage');?>" title="<?php echo Yii::t('phrase', 'Translate');?>"><?php echo Yii::t('phrase', 'Translate');?></a></li>
@@ -159,7 +161,7 @@
 <li <?php echo $menuRender == 4 ? 'class="active open"' : ''; ?>>
 	<a class="menu-toggle" href="javascript:void(0);" title="<?php echo Yii::t('phrase', 'Settings');?>"><i class="zmdi zmdi-home"></i><span><?php echo Yii::t('phrase', 'Settings');?></span></a>
 	<ul class="ml-menu">
-		<?php if(Yii::app()->user->level == 1) {?>
+		<?php if(!Yii::app()->user->isGuest && Yii::app()->user->level == 1) {?>
 			<li <?php echo $currentAction == 'settings/general' ? 'class="active"' : '';?>><a href="<?php echo Yii::app()->createUrl('settings/general');?>" title="<?php echo Yii::t('phrase', 'General Settings');?>"><?php echo Yii::t('phrase', 'General Settings');?></a></li>
 			<?php if($setting->site_type == 1) {?>
 				<li <?php echo $currentAction == 'settings/banned' ? 'class="active"' : '';?>><a href="<?php echo Yii::app()->createUrl('settings/banned');?>" title="<?php echo Yii::t('phrase', 'Spam & Banning Tools');?>"><?php echo Yii::t('phrase', 'Spam & Banning Tools');?></a></li>
