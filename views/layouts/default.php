@@ -101,7 +101,7 @@
  <body class="theme-cyan <?php echo $currentAction == 'dashboard/rtl' ? 'rtl' : '';?>">
 
 	<?php echo $content;?>
-	<?php $this->widget('FrontGoogleAnalytics'); ?>
+	<?php $this->widget('ComGoogleAnalytics'); ?>
 
  </body>
 </html>
