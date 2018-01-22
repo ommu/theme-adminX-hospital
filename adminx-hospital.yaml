@@ -11,6 +11,10 @@ author:
   homepage: https://sudaryanto.id
 
 config:
+  ga:
+    label: Google Analytic Rules
+    rules: 
+
   menu:
     label: Menus
     option:
