@@ -4,21 +4,21 @@
 	"keywords": [
 		"theme",
 		"backend",
+		"backoffice",
 		"ommu",
-		"platform",
 		"ommu platform"
 	],
-	"homepage": "https://github.com/OmmuThemes/adminX-hospital",
+	"homepage": "https://github.com/ommu/theme-adminX-hospital",
 	"type": "ommu-theme",
 	"license": "Apache-2.0",
 	"support": {
-		"issues": "https://github.com/OmmuThemes/adminX-hospital/issues",
-		"wiki": "https://github.com/OmmuThemes/adminX-hospital/wiki",
-		"source": "https://github.com/OmmuThemes/adminX-hospital"
+		"issues": "https://github.com/ommu/theme-adminX-hospital/issues",
+		"wiki": "https://github.com/ommu/theme-adminX-hospital/wiki",
+		"source": "https://github.com/ommu/theme-adminX-hospital"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/OmmuThemes/adminX-hospital.git"
+		"url": "https://github.com/ommu/theme-adminX-hospital.git"
 	},
 	"authors": [
 		{
