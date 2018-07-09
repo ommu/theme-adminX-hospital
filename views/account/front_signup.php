@@ -19,7 +19,7 @@
 ?>
 
 <?php if($token == null) {?>
-	<?php $form=$this->beginWidget('application.libraries.core.components.system.OActiveForm', array(
+	<?php $form=$this->beginWidget('application.libraries.yii-traits.system.OActiveForm', array(
 		'id'=>'signup-form',
 		'enableClientValidation'=>true,
 		'clientOptions'=>array(
