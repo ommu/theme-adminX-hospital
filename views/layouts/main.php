@@ -80,6 +80,8 @@
 		<?php }?>
 
 		<?php echo $content;?>
+
+		<?php $this->widget('Footer'); // Footer ?>
 	</div>
 </section>
 <?php //end.Main Content ?>

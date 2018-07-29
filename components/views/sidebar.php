@@ -17,7 +17,7 @@
 		<ul class="list">
 			<?php $this->widget('SidebarMenuAccount'); // Sidebar Menu Account ?>
 
-			<?php if(!$condition || ($condition && $configTheme['menu']['option'] == 'theme'))
+			<?php if(!$condition || $configTheme['menu']['option'] == 'theme')
 				$this->widget('SidebarMenuFromTheme'); // Sidebar Menu from Theme
 			else if($configTheme['menu']['option'] == 'backoffice')
 				$this->widget('SidebarMenuBackoffice'); // Sidebar Menu from Backoffice

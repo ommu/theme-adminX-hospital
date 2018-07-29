@@ -36,8 +36,8 @@ class SidebarMenuFromDatabase extends CWidget
 		$criteria=new CDbCriteria;
 		$criteria->with = array(
 			'cat' => array(
-				'alias'=>'cat',
-				'select'=>'cat_id, cat_code',
+				'alias' => 'cat',
+				'select' => 'cat_id, cat_code',
 			),
 		);
 		$criteria->compare('t.publish', 1);

@@ -37,7 +37,7 @@
 	<ul class="ml-menu">
 		<li <?php echo $currentAction == 'admin/dashboard' ? 'class="active"' : '';?>><a href="<?php echo Yii::app()->createUrl('admin/dashboard');?>" title="<?php echo Yii::t('phrase', 'Summary');?>"><?php echo Yii::t('phrase', 'Summary');?></a></li>
 		<?php
-		$core = OmmuPlugins::getPlugin(2, null, 'data');
+		$core = OmmuPlugins::getPlugin(2, 'directory', false);
 		if($core != null) {
 			foreach($core as $key => $val) {
 				$menus = Utility::getModuleMenu($val->folder);
@@ -118,14 +118,14 @@
 	</ul>
 </li>
 
-<?php $plugin = OmmuPlugins::getPlugin(1, null, 'data');
+<?php $plugin = OmmuPlugins::getPlugin(1, 'directory', false);
 	if($plugin != null) {
 		foreach($plugin as $key => $val) {
 			$parent = $val->parent_id ? $val->parent->folder : null;
 			$menus = Utility::getModuleMenu($val->folder, $parent);
 			if($menus != null) {
 				$liClass = '';
-				$plugin = $_GET['plugin'];
+				$plugin = Yii::app()->getRequest()->getParam('plugin');
 				if(isset($plugin)) {
 					if($val->parent_id && $val->folder == $plugin)
 						$liClass = 'class="active open"';

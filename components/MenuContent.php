@@ -30,7 +30,7 @@ class MenuContent extends CWidget
 		$currentModule = strtolower(Yii::app()->controller->module->id.'/'.Yii::app()->controller->id);
 		$currentModuleAction = strtolower(Yii::app()->controller->module->id.'/'.Yii::app()->controller->id.'/'.Yii::app()->controller->action->id);
 		
-		$plugin = $_GET['plugin'];
+		$plugin = Yii::app()->getRequest()->getParam('plugin');
 		if(isset($plugin))
 			$menus = Utility::getContentMenu($plugin, $module);
 		else

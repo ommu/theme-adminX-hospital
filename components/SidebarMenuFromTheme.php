@@ -12,6 +12,8 @@
 
 class SidebarMenuFromTheme extends CWidget
 {
+	use ThemeTrait;
+
 	public function init() {
 	}
 
@@ -31,7 +33,7 @@ class SidebarMenuFromTheme extends CWidget
 		$setting = OmmuSettings::model()->findByPk(1,array(
 			'select' => 'site_type'
 		));
-		$themeMenu = Utility::getThemeInfo(Yii::app()->theme->name, 'theme_menu');
+		$themeMenu = $this->themeInfo(Yii::app()->theme->name, 'theme_menu');
 
 		$this->render('sidebar_menu_from_theme',array(
 			'setting'=>$setting,

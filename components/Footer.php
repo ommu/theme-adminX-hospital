@@ -1,6 +1,6 @@
 <?php
 /**
- * Sidebar
+ * Footer
  * version: 0.0.1
  *
  * @author Putra Sudaryanto <putra@sudaryanto.id>
@@ -10,7 +10,7 @@
  *
  */
 
-class Sidebar extends CWidget
+class Footer extends CWidget
 {
 	public function init() {
 	}
@@ -28,16 +28,21 @@ class Sidebar extends CWidget
 		$currentModuleAction = strtolower(Yii::app()->controller->module->id.'/'.Yii::app()->controller->id.'/'.Yii::app()->controller->action->id);
 
 		$condition = 0;
-		$model = OmmuThemes::model()->findByAttributes(array(
+		$theme = OmmuThemes::model()->findByAttributes(array(
 			'folder'=>Yii::app()->theme->name,
 		));
-		$configTheme = unserialize($model->config);
-		if($model != null && !empty($configTheme) && is_array($configTheme))
+		$configTheme = unserialize($theme->config);
+		if($theme != null && !empty($configTheme) && is_array($configTheme))
 			$condition = 1;
 
-		$this->render('sidebar',array(
+		$setting = OmmuSettings::model()->findByPk(1, array(
+			'select' => 'site_title, site_description',
+		));
+
+		$this->render('footer',array(
 			'condition'=>$condition,
 			'configTheme'=>$configTheme,
+			'setting'=>$setting,
 			'module'=>$module,
 			'controller'=>$controller,
 			'action'=>$action,
