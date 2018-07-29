@@ -27,7 +27,17 @@ class MenuNotifications extends CWidget
 		$currentModule = strtolower(Yii::app()->controller->module->id.'/'.Yii::app()->controller->id);
 		$currentModuleAction = strtolower(Yii::app()->controller->module->id.'/'.Yii::app()->controller->id.'/'.Yii::app()->controller->action->id);
 
+		$condition = 0;
+		$theme = OmmuThemes::model()->findByAttributes(array(
+			'folder'=>Yii::app()->theme->name,
+		));
+		$configTheme = unserialize($theme->config);
+		if($theme != null && !empty($configTheme) && is_array($configTheme))
+			$condition = 1;
+
 		$this->render('menu_notifications',array(
+			'condition'=>$condition,
+			'configTheme'=>$configTheme,
 			'module'=>$module,
 			'controller'=>$controller,
 			'action'=>$action,

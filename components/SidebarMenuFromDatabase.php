@@ -35,14 +35,14 @@ class SidebarMenuFromDatabase extends CWidget
 
 		$criteria=new CDbCriteria;
 		$criteria->with = array(
-			'cat' => array(
-				'alias' => 'cat',
+			'category' => array(
+				'alias' => 'category',
 				'select' => 'cat_id, cat_code',
 			),
 		);
 		$criteria->compare('t.publish', 1);
-		$criteria->compare('cat.cat_code', $this->category);
-		$menus = OmmuMenu::model()->findAll($criteria);
+		$criteria->compare('category.cat_code', $this->category);
+		$menus = OmmuMenus::model()->findAll($criteria);
 
 		$this->render('sidebar_menu_from_database',array(
 			'setting'=>$setting,

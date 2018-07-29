@@ -23,6 +23,27 @@ config:
       theme: Theme
     database-category: Category Menu from Database
 
+  topmenu:
+    label: Topmenu
+    search: 
+      label: Search
+      publish: 1
+    feature: 
+      label: Feature
+      publish: 1
+    message: 
+      label: Messages
+      publish: 1
+    notification: 
+      label: Notification
+      publish: 1
+    task: 
+      label: Task
+      publish: 1
+    setting: 
+      label: Setting
+      publish: 1
+
   footer:
     label: Footer
     publish: 1
