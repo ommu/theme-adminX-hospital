@@ -96,6 +96,7 @@
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <title><?php echo $title;?></title>
   <meta name="author" content="Ommu Platform (support@ommu.co)" />
+  <?php echo preg_replace('({baseUrl})', Yii::app()->request->baseUrl, $this->themeSetting['script']['desc']);?>
   <link rel="shortcut icon" href="<?php echo Yii::app()->theme->baseUrl;?>/favicon.ico" />
  </head>
  <body class="theme-cyan <?php echo $currentAction == 'dashboard/rtl' ? 'rtl' : '';?>">
