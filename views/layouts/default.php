@@ -41,13 +41,14 @@
 	$keywords = $this->pageMeta;
 	$urlAddress = Utility::getProtocol().'://'.Yii::app()->request->serverName.Yii::app()->request->requestUri;
 
-	if(Yii::app()->request->isAjaxRequest && !Yii::app()->getRequest()->getParam('ajax')) {
-		/* if(Yii::app()->session['theme_active'] != Yii::app()->theme->name) {
+	//if(Yii::app()->request->isAjaxRequest && !Yii::app()->getRequest()->getParam('ajax')) {
+		/*
+		if(Yii::app()->session['theme_active'] != Yii::app()->theme->name) {
 			$return = array(
 				'redirect' => $urlAddress,		
 			);
 
-		} else { */
+		} else {
 			$page = $this->contentOther == true ? 1 : 0;
 			$dialog = $this->dialogDetail == true ? (empty($this->dialogWidth) ? 1 : 2) : 0;		// 0 = static, 1 = dialog, 2 = notifier
 			$header = $this->widget('MenuMain', array(), true);
@@ -72,10 +73,11 @@
 			$return['header'] = $this->dialogDetail != true ? $header : '';
 			$return['render'] = $render;
 			$return['script'] = $cs=Yii::app()->getClientScript()->getOmmuScript();
-		//}
+		}
 		echo CJSON::encode($return);
+		*/
 
-	} else {
+	//} else {
 		$cs = Yii::app()->getClientScript();
 		$cs->registerCssFile(Yii::app()->theme->baseUrl.'/css/bootstrap.min.css');
 		$cs->registerCssFile('https://fonts.googleapis.com/icon?family=Material+Icons');
@@ -104,7 +106,21 @@
 	<?php echo $content;?>
 	<?php $this->widget('ComGoogleAnalytics'); ?>
 
+	<div class="modal fade" id="defaultModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="defaultModalLabel">Modal title</h4>
+				</div>
+				<div class="modal-body"></div>
+				<div class="modal-footer">
+					<button id="modalSubmit" type="button" class="btn btn-raised btn-primary waves-effect">NEXT</button>
+					<button id="modalCancel" type="button" class="btn btn-link waves-effect" data-dismiss="modal">CLOSE</button>
+				</div>
+			</div>
+		</div>
+	</div>
  </body>
 </html>
 
-<?php }?>
+<?php //}?>

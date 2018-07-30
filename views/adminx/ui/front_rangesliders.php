@@ -18,7 +18,7 @@
 	$cs = Yii::app()->getClientScript();
 	$cs->registerCssFile(Yii::app()->theme->baseUrl.'/plugins/ion-rangeslider/css/ion.rangeSlider.css');
 	$cs->registerCssFile(Yii::app()->theme->baseUrl.'/plugins/ion-rangeslider/css/ion.rangeSlider.skinFlat.css');
-	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/ion-rangeslider/js/ion.rangeSlider.js', CClientScript::POS_END);
+	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/plugins/ion-rangeslider/js/ion-rangeSlider/ion.rangeSlider.js', CClientScript::POS_END);
 	$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/js/custom/range-sliders.js', CClientScript::POS_END);
 ?>
 
