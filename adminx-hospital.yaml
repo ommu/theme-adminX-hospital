@@ -15,6 +15,10 @@ config:
     label: Google Analytic Rules
     rules: 
 
+  redirect:
+    label: Redirect "site/index"
+    rules: 
+
   menu:
     label: Menus
     option:
