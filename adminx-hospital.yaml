@@ -11,14 +11,6 @@ author:
   homepage: https://sudaryanto.id
 
 config:
-  ga:
-    label: Google Analytic Rules
-    rules: 
-
-  redirect:
-    label: Redirect "site/index"
-    rules: 
-
   menu:
     label: Menus
     option:
