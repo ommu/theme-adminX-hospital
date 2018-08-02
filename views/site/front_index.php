@@ -21,6 +21,7 @@
 	if(Yii::app()->user->isGuest)
 		$this->redirect(array('site/login'));
 
-	if(Yii::app()->controller->themeSetting['redirect']['rules'])
-		$this->redirect(Yii::app()->controller->themeSetting['redirect']['rules']);
+	$redirect = Yii::app()->controller->themeSetting['site-controller']['redirect']['rules'];
+	if($redirect != null)
+		$this->redirect($redirect);
 ?>
