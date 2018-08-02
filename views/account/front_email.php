@@ -11,11 +11,11 @@
  *
  */
 
+	$this->layout = 'login';
+
 	$this->breadcrumbs=array(
 		'Reset Password',
 	);
-	
-	$this->layout = 'login';
 ?>
 
 <?php if($condition == 'success') {?>

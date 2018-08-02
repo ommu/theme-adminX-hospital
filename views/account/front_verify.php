@@ -10,12 +10,12 @@
  * @link https://github.com/OmmuThemes/adminX-hospital
  *
  */
+	
+	$this->layout = 'login';
 
 	$this->breadcrumbs=array(
 		'Forgot Password',
 	);
-	
-	$this->layout = 'login';
 ?>
 
 <?php if($token == null) {?>

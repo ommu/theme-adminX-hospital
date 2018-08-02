@@ -11,12 +11,12 @@
  * @link https://github.com/OmmuThemes/adminX-hospital
  *
  */
+
+	$this->layout = 'login';
  
 	$this->breadcrumbs=array(
 		'Maintenance',
 	);
-	
-	$this->layout = 'login';
 	$this->pageTitle = Yii::t('phrase', 'The General Shutdown');
 	$this->pageDescription = CHtml::encode($setting->construction_text);
 ?>

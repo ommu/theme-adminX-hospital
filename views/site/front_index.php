@@ -10,18 +10,19 @@
  * @link https://github.com/OmmuThemes/adminX-hospital
  *
  */
+	
+	$configTheme = Yii::app()->controller->themeSetting;
+
+	if(Yii::app()->user->isGuest)
+		$this->redirect(array('site/login'));
+
+	$redirect = $configTheme['site-controller']['redirect']['rules'];
+	if($redirect != null)
+		$this->redirect($redirect);
 
 	$this->breadcrumbs=array(
 		'Main',
 	);
-	
 	$this->pageTitle = Yii::t('phrase', 'Main');
 	$this->pageDescription = '';
-	
-	if(Yii::app()->user->isGuest)
-		$this->redirect(array('site/login'));
-
-	$redirect = Yii::app()->controller->themeSetting['site-controller']['redirect']['rules'];
-	if($redirect != null)
-		$this->redirect($redirect);
 ?>

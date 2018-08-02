@@ -11,11 +11,12 @@
  *
  */
 
+	$this->layout = 'login';
+
 	$this->breadcrumbs=array(
 		'Forgot Username',
 	);
 	
-	$this->layout = 'login';
 	$this->pageTitle = Yii::t('phrase', 'Forgot Username?');
 	$this->pageDescription = Yii::t('phrase', 'Enter your e-mail address below to reset your username.');
 ?>
