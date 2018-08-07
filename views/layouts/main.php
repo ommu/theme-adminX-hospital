@@ -43,7 +43,7 @@
 <nav class="navbar clearHeader">
 	<div class="navbar-header">
 		<a href="javascript:void(0);" class="bars"></a>
-		<a class="navbar-brand" href="<?php echo Yii::app()->createUrl('site/index');?>"><img class="logo" src="<?php echo Yii::app()->theme->baseUrl;?>/images/logo.svg" alt="profile img">Hospital</a>
+		<a class="navbar-brand" href="<?php echo Yii::app()->createUrl('site/index');?>"><img class="logo" src="<?php echo Yii::app()->theme->baseUrl;?>/images/logo.svg" alt="profile img"><?php echo Yii::app()->controller->themeSetting['web-title'];?></a>
 	<?php if($currentAction == 'dashboard/rtl') {?>
 	</div>
 	<?php }

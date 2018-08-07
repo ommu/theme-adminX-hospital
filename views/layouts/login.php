@@ -33,9 +33,11 @@
 			<div class="col-xl-9 col-lg-8 col-md-12 col-sm-12 p-l-0">
 				<div class="l-detail">
 					<h5 class="position"><?php echo Yii::t('phrase', 'Welcome');?></h5>
-					<h1 class="position"><img src="<?php echo Yii::app()->theme->baseUrl;?>/images/logo.svg" alt="profile img"><span>H</span>ospital</h1>
+					<h1 class="position"><img src="<?php echo Yii::app()->theme->baseUrl;?>/images/logo.svg" alt="profile img"><?php echo Yii::app()->controller->themeSetting['web-title'];?></h1>
 					<h3 class="position"><?php echo Yii::t('phrase', 'Sign in to start your session');?></h3>
-					<p class="position"><?php echo Yii::t('phrase', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.');?></p>
+					<?php if(Yii::app()->controller->themeSetting['web-description'] && Yii::app()->controller->themeSetting['web-description'] != '-') {?>
+					<p class="position"><?php echo Yii::t('phrase', Yii::app()->controller->themeSetting['web-description']);?></p>
+					<?php }?>
 					<ul class="list-unstyled l-social position">
 						<li><a href="#"><i class="zmdi zmdi-facebook-box"></i></a></li>
 						<li><a href="#"><i class="zmdi zmdi-linkedin-box"></i></a></li>
