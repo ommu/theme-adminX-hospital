@@ -17569,38 +17569,61 @@ img.width50 {
 	border-radius: 0;
 	margin-bottom: 0
 }
+.grid-view table.items {
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 1rem;
+}
 .table tbody tr td,
-.table tbody tr th {
+.table tbody tr th,
+.grid-view table.items tbody tr td,
+.grid-view table.items tbody tr th {
 	padding: 10px;
 	border-top: 1px solid #eee;
 	border-bottom: 1px solid #eee
 }
 .table tbody tr.primary td,
-.table tbody tr.primary th {
+.table tbody tr.primary th,
+.grid-view table.items tbody tr.primary td,
+.grid-view table.items tbody tr.primary th {
 	background-color: #1f91f3;
 	color: #fff
 }
 .table tbody tr.success td,
-.table tbody tr.success th {
+.table tbody tr.success th,
+.grid-view table.items tbody tr.success td,
+.grid-view table.items tbody tr.success th {
 	background-color: #2b982b;
 	color: #fff
 }
 .table tbody tr.info td,
-.table tbody tr.info th {
+.table tbody tr.info th,
+.grid-view table.items tbody tr.info td,
+.grid-view table.items tbody tr.info th {
 	background-color: #00b0e4;
 	color: #fff
 }
 .table tbody tr.warning td,
-.table tbody tr.warning th {
+.table tbody tr.warning th,
+.grid-view table.items tbody tr.warning td,
+.grid-view table.items tbody tr.warning th {
 	background-color: #ff9600;
 	color: #fff
 }
 .table tbody tr.danger td,
-.table tbody tr.danger th {
+.table tbody tr.danger th,
+.grid-view table.items tbody tr.danger td,
+.grid-view table.items tbody tr.danger th {
 	background-color: #fb483a;
 	color: #fff
 }
-.table thead tr th {
+.grid-view table.items tbody td.button-column,
+.grid-view table.items tbody td.button-column * {
+	text-transform: uppercase;
+}
+.table thead tr th,
+.grid-view table.items thead tr td,
+.grid-view table.items thead tr th {
 	padding: 10px;
 	border-bottom: 2px solid #eee;
 	border-top: none
