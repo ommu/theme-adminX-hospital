@@ -45,7 +45,7 @@
 		/*
 		if(Yii::app()->session['theme_active'] != Yii::app()->theme->name) {
 			$return = array(
-				'redirect' => $urlAddress,		
+				'redirect' => $urlAddress,
 			);
 
 		} else {

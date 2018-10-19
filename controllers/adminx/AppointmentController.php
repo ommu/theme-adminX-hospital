@@ -2,7 +2,6 @@
 /**
  * AppointmentController
  * @var $this AppointmentController
- * version: 0.0.1
  * Reference start
  *
  * TOC :

@@ -2,7 +2,6 @@
 /**
  * ExtraController
  * @var $this ExtraController
- * version: 0.0.1
  * Reference start
  *
  * TOC :

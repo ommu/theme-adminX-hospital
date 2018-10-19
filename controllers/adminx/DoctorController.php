@@ -2,7 +2,6 @@
 /**
  * DoctorController
  * @var $this DoctorController
- * version: 0.0.1
  * Reference start
  *
  * TOC :

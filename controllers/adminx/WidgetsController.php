@@ -2,7 +2,6 @@
 /**
  * WidgetsController
  * @var $this WidgetsController
- * version: 0.0.1
  * Reference start
  *
  * TOC :

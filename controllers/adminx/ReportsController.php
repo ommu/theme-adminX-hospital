@@ -2,7 +2,6 @@
 /**
  * ReportsController
  * @var $this ReportsController
- * version: 0.0.1
  * Reference start
  *
  * TOC :
