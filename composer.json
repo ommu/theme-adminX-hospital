@@ -6,7 +6,7 @@
 		"backend",
 		"backoffice",
 		"ommu",
-		"ommu platform"
+		"ommu-platform"
 	],
 	"homepage": "https://github.com/ommu/theme-adminX-hospital",
 	"type": "ommu-theme",
