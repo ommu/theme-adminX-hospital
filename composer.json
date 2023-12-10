@@ -1,0 +1,43 @@
+{
+	"name": "ommu/adminx-hospital",
+	"description": "adminX Hospital - The Ultimate bootstrap4 Dashboard",
+	"type": "ommu-theme",
+	"keywords": [
+		"theme",
+		"adminx-hospital",
+		"admin-template",
+		"bootstrap4",
+		"ommu",
+		"ommu-platform",
+		"yii2"
+	],
+	"license": "Apache-2.0",
+	"homepage": "https://github.com/ommu/theme-adminX-hospital",
+	"support": {
+		"issues": "https://github.com/ommu/theme-adminX-hospital/issues",
+		"wiki": "https://github.com/ommu/theme-adminX-hospital/wiki",
+		"source": "https://github.com/ommu/theme-adminX-hospital"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ommu/theme-adminX-hospital.git"
+	},
+	"authors": [
+		{
+			"name": "Putra Sudaryanto",
+			"email": "putra@ommu.id",
+			"homepage": "https://ommu.id",
+			"role": "Developer"
+		},
+		{
+			"name": "wraptheme",
+			"homepage": "https://themeforest.net/user/wraptheme",
+			"role": "Creator"
+		}
+	],
+	"require": {
+		"php": "~7.0",
+        "composer/installers": "~1.0",
+		"yiisoft/yii2": "~2.0.14"
+	}
+}
